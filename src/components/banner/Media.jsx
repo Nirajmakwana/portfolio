@@ -1,6 +1,6 @@
 import React from "react";
 import { FaFacebookF, FaTwitter, FaLinkedinIn, FaReact } from "react-icons/fa";
-import { SiTailwindcss, SiFigma, SiNextdotjs } from "react-icons/si";
+import { SiTailwindcss, SiFigma } from "react-icons/si";
 import { FaGithub } from "react-icons/fa";
 import { MyGithub, MyLinkedin, MySkils } from "../../constants";
 const Media = () => {
