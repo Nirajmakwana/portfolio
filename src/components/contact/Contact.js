@@ -17,15 +17,15 @@ const Contact = () => {
           <ContactLeft />
           <div className="w-full lgl:w-[60%] h-full py-10 bg-gradient-to-r from-[#1e2024] to-[#23272b] flex flex-col gap-8 p-4 lgl:p-8 rounded-lg shadow-shadowOne">
             <div className="w-full flex flex-col gap-4 lgl:gap-6 py-2 lgl:py-5">
-                <embed
+                {/* <embed
                   src={MyResume}
                   key={MyResume}
                   type="application/pdf"
                   height={"100%"}
                   width={"100%"}
                   className="basis-full min-h-screen  h-fit"
-                />
-                {/* <iframe
+                /> */}
+                <iframe
                   src={MyResume}
                   key={MyResume}
                   type="application/pdf"
@@ -33,7 +33,7 @@ const Contact = () => {
                   width={"100%"}
                   className="basis-full min-h-screen  h-fit"
                   title="My Resume"
-                /> */}
+                />
             </div>
           </div>
         </div>
