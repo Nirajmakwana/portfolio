@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import Title from "../layouts/Title";
 import ContactLeft from "./ContactLeft";
 import MyResume from "../../../src/assets/NirajMakwana.pdf";
