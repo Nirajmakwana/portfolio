@@ -45,12 +45,10 @@ const Media = () => {
                 <div className="bannerIcon group p-10" title="React">
                   <div>
                     <div className="flex justify-center">
-                      {item.Icon !== '' ?  <item.Icon  /> : '' } 
+                      {item.Icon !== "" ? <item.Icon /> : ""}
                     </div>
-                    <p className="text-xs capitalize group-hover:text-red-500 text-gray-400 flex items-center gap-2 text-ellipsis">
-                      {
-                        item.name
-                      }
+                    <p className="text-xs capitalize group-hover:text-designColor text-gray-400 flex items-center gap-2 text-ellipsis">
+                      {item.name}
                     </p>
                   </div>
                 </div>
