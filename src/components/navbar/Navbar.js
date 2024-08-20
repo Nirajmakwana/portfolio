@@ -2,16 +2,14 @@ import React, { useState } from "react";
 import { Link } from "react-scroll";
 import { FiMenu } from "react-icons/fi";
 import { MdClose } from "react-icons/md";
-import { FaFacebookF, FaTwitter, FaLinkedinIn, FaGithub } from "react-icons/fa";
+import { FaLinkedinIn, FaGithub } from "react-icons/fa";
 import { logo } from "../../assets/index";
 import { MyGithub, MyLinkedin, MyName, NavBarLinksData } from "../../constants";
 import Title from "../layouts/Title";
+import { NavigateToUrl } from "../GlobalFuncation";
 
 const Navbar = () => {
   const [showMenu, setShowMenu] = useState(false);
-  const NavigateToUrl = (url) => {
-    window.open(url, "_blank");
-  };
   return (
     <div className="w-full h-24 sticky top-0 z-50 bg-bodyColor mx-auto flex justify-between items-center font-titleFont border-b-[1px] border-b-gray-600">
       <div>

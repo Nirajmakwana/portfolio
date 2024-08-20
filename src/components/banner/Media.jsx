@@ -1,12 +1,9 @@
 import React from "react";
-import { FaFacebookF, FaTwitter, FaLinkedinIn, FaReact } from "react-icons/fa";
-import { SiTailwindcss, SiFigma } from "react-icons/si";
+import { FaLinkedinIn } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
-import { MyGithub, MyLinkedin, MySkils } from "../../constants";
+import { MyGithub, MyLinkedin, MySkills } from "../../constants";
+import { NavigateToUrl } from "../GlobalFuncation";
 const Media = () => {
-  const NavigateToUrl = (url) => {
-    window.open(url, "_blank");
-  };
   return (
     <div>
       <div className="flex flex-col xl:flex-row gap-6 lgl:gap-0 justify-between mb-4">
@@ -21,7 +18,7 @@ const Media = () => {
                 NavigateToUrl(MyLinkedin);
               }}
             >
-              <FaLinkedinIn color />
+              <FaLinkedinIn />
             </span>
             <span
               className="bannerIcon"
@@ -40,9 +37,13 @@ const Media = () => {
             BEST SKILL ON
           </h2>
           <div className="grid xs:grid-cols-3  md:grid-cols-4 mdl:grid-cols-5 lgl:grid-cols-5 gap-4">
-            {MySkils.map((item) => {
+            {MySkills.map((item) => {
               return (
-                <div className="bannerIcon group p-10" title="React">
+                <div
+                  key={item.name}
+                  className="bannerIcon group p-10"
+                  title="React"
+                >
                   <div>
                     <div className="flex justify-center">
                       {item.Icon !== "" ? <item.Icon /> : ""}

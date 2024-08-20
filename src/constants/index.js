@@ -1,6 +1,5 @@
-import { FaCcStripe, FaReact } from "react-icons/fa";
 import { IoLogoReact } from "react-icons/io5";
-import { SiFirebase, SiNextdotjs, SiReactquery, SiRedux, SiTailwindcss, SiTypescrip, SiTypescript, SiAntdesign, SiMui, SiJest, SiNodedotjs, SiExpressvpn } from "react-icons/si";
+import { SiFirebase, SiNextdotjs, SiReactquery, SiRedux, SiTailwindcss, SiTypescript, SiAntdesign, SiMui, SiJest, SiNodedotjs, SiExpressvpn } from "react-icons/si";
 import { FaBootstrap, FaHtml5 } from "react-icons/fa6";
 import { IoLogoJavascript } from "react-icons/io5";
 
@@ -8,7 +7,7 @@ import { IoLogoJavascript } from "react-icons/io5";
  * An array of objects representing the user's skills, including the skill name and an icon component to display.
  * These skills are used to showcase the user's technical expertise.
  */
-export const MySkils = [
+export const MySkills = [
   {
     name: "ReactJs",
     Icon: IoLogoReact,
