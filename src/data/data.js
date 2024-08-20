@@ -1,6 +1,7 @@
 import { FaMobile } from "react-icons/fa";
 import { SiProgress } from "react-icons/si";
-import { MdWeb } from "react-icons/md";
+import { MdOutlineDesignServices, MdWeb } from "react-icons/md";
+import { GrPerformance } from "react-icons/gr";
 
 // Features Data
 export const featuresData = [
@@ -8,20 +9,33 @@ export const featuresData = [
     id: 2,
     icon: <MdWeb />,
     title: "Web Development",
-    des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque solutahic consequuntur eum repellendus ad",
+    des: "Crafting responsive, high-performance websites using modern technologies like React.js, HTML, and CSS to deliver seamless user experiences.",
   },
   {
     id: 4,
     icon: <FaMobile />,
     title: "Mobile Development",
-    des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque solutahic consequuntur eum repellendus ad",
+    des: "Building intuitive and efficient mobile applications with React Native, ensuring a consistent and engaging user experience across platforms.",
   },
   {
     id: 3,
     icon: <SiProgress />,
     title: "SEO Optimisation",
-    des: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque solutahic consequuntur eum repellendus ad",
+    des: "Implementing SEO best practices to enhance website visibility, improve search engine rankings, and drive organic traffic.",
   },
+  {
+    id: 4,
+    icon: <MdOutlineDesignServices />,
+    title: "UI/UX Design",
+    des: "Translating complex designs into interactive interfaces that prioritize user experience and accessibility, ensuring visually appealing and functional designs.",
+  },
+  {
+    id: 5,
+    icon: <GrPerformance />,
+    title: "Performance Optimization",
+    des: "Enhancing website speed and performance through optimized code, reducing load times, and ensuring smooth user interactions.",
+  },
+  
 ];
 
 export const ProjectsData = [
