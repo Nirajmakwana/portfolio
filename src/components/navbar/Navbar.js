@@ -13,11 +13,20 @@ const Navbar = () => {
   return (
     <div className="w-full h-24 sticky top-0 z-50 bg-bodyColor mx-auto flex justify-between items-center font-titleFont border-b-[1px] border-b-gray-600">
       <div>
-        <img
-          style={{ borderRadius: "100px", height: "70px" }}
-          src={logo}
-          alt="logo"
-        />
+        <Link
+          className="cursor-pointer"
+          to={NavBarLinksData[0].link}
+          spy={true}
+          smooth={true}
+          offset={-70}
+          duration={500}
+        >
+          <img
+            style={{ borderRadius: "100px", height: "70px" }}
+            src={logo}
+            alt="logo"
+          />
+        </Link>
       </div>
       <div>
         <ul className="hidden mdl:inline-flex items-center gap-6 lg:gap-10">

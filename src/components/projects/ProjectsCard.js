@@ -38,9 +38,9 @@ const ProjectsCard = ({ title, des, src, link, tech, code }) => {
           <p className="text-sm tracking-wide mt-3 mb-3 ">
             Tech Name: {Array.isArray(tech) && tech.join(", ")}
           </p>
-          {/* <ul className="duration-300 text-ellipsis overflow-hidden line-clamp-2">
+          <ul className="duration-300 text-ellipsis overflow-hidden line-clamp-2">
             {Array.isArray(des) &&
-              des.map((item,index) => {
+              des.slice(0,2).map((item,index) => {
                 return (
                   <div key={item+index}>
                   <li className="flex">
@@ -51,7 +51,7 @@ const ProjectsCard = ({ title, des, src, link, tech, code }) => {
                   </div>
                 );
               })}
-          </ul> */}
+          </ul>
         </div>
       </div>
     </div>

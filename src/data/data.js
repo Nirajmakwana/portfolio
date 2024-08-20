@@ -35,12 +35,12 @@ export const ProjectsData = [
   {
     name: "doctor consultation platform",
     TechName: ["Next.Js", "React.js", "Ant Design", "redux"],
-    des: ['Responsible for Design and development of User as well as Delivery partner Application',"Responsible for Design and development of User as well as Delivery partner Application","Responsible for Design and development of User as well as Delivery partner Application"],
+    des: ['Mange roles and permissions for users and admin',"Doctors can manage patient treatment history and invoices.","Pharmacists handle stock and invoices.","Patients can access invoices and check doctor availability in different cities.","Admin can manage all users and doctors."],
   },
   {
     name: "Dental Hospital Management System",
     TechName: ["Next.Js", "React.js", "Mui", "redux"],
-    des: ['Responsible for Design and development of User as well as Delivery partner Application',"Responsible for Design and development of User as well as Delivery partner Application","Responsible for Design and development of User as well as Delivery partner Application"],
+    des: ["Responsible for Design and development of User as well as Delivery partner Application"],
   },
   {
     name: "marketplace for digital services",
