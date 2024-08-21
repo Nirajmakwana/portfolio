@@ -111,7 +111,7 @@ export const ProjectsData = [
     des: [
       "Student can take online classes and give exam",
       "Book driving lesson with driver with nearest location or any other location",
-      "Make payment in different phases like booking fees, driving lesson fees, exam fees, license fees",
+      "different payment like driving lesson fees, exam fees, license fees",
     ],
   },
   {
