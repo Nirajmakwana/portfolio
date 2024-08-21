@@ -76,6 +76,7 @@ export const ProjectsData = [
     name: "Spiritual Guidance Platform",
     TechName: ["Next.Js", "React.js", "Mui"],
     des: [
+      "Create a content management for admin",
       "Providing quality spiritual direction.",
       "Managing donations.",
       "Organizing events and sending emails to participants.",
@@ -86,6 +87,7 @@ export const ProjectsData = [
     TechName: ["Next.Js", "React.js", "Mui", "redux"],
     des: [
       "Doctors to manage patient X-rays and invoices medicine.",
+      "Create a content management for admin",
       "Nurse can see X-rays and assist Patients",
       "Patients can access invoices and check doctor availability and book appointment",
       "Admin can manage all users every role",
@@ -101,6 +103,7 @@ export const ProjectsData = [
       "Customers can search for freelancers and services.",
       "Customers can book services and make payments in crypto.",
       "Freelancers can manage their services and invoices and demand any one crypto currency.",
+      "Create a content management for admin",
     ],
   },
   {
@@ -110,8 +113,10 @@ export const ProjectsData = [
     WorklikeLink: "https://www.uber.com/",
     des: [
       "Student can take online classes and give exam",
+      "Create a content management for admin",
       "Book driving lesson with driver with nearest location or any other location",
       "different payment like driving lesson fees, exam fees, license fees",
+      "Create a content management for admin"
     ],
   },
   {
@@ -146,6 +151,7 @@ export const ProjectsData = [
     TechName: ["React.js", "Mui", "redux"],
     des: [
       "Create different users like buyer and seller",
+      "Create a content management for admin",
       "Seller and buyer can book a container track container",
       "Seller and Buyer can adjust price off container and make request for price",
       "super admin can switch there role and give permission to other to change roles",
@@ -159,6 +165,7 @@ export const ProjectsData = [
     TechName: ["React.js", "Mui", "redux-toolkit"],
     des: [
       "Youtube video Url to PDF with AI",
+      "Create a content management for admin",
       "limited prompt for AI help",
       "Create PDF With different templates",
       "Integrate AI in PDF generator",

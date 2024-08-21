@@ -63,7 +63,7 @@ const ProjectsCard = ({
           </p>
           <ul className="duration-300 text-ellipsis overflow-hidden">
             {Array.isArray(des) &&
-              des.slice(0,3).map((item, index) => {
+              des.map((item, index) => {
                 return (
                   <div className="flex items-baseline" key={item + index}>
                     <li className="flex items-start gap-2">
