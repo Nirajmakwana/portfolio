@@ -48,7 +48,7 @@ const Media = () => {
                     <div className="flex justify-center">
                       {item.Icon !== "" ? <item.Icon /> : ""}
                     </div>
-                    <p className="text-xs capitalize group-hover:text-designColor text-gray-400 flex items-center gap-2 text-ellipsis">
+                    <p className="text-xs text-center capitalize group-hover:text-designColor text-gray-400 flex items-center gap-2 text-ellipsis">
                       {item.name}
                     </p>
                   </div>

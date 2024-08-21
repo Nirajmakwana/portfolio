@@ -1,7 +1,21 @@
-import { IoLogoReact } from "react-icons/io5";
-import { SiFirebase, SiNextdotjs, SiReactquery, SiRedux, SiTailwindcss, SiTypescript, SiAntdesign, SiMui, SiJest, SiNodedotjs, SiExpressvpn } from "react-icons/si";
+import { IoLogoFirebase, IoLogoReact } from "react-icons/io5";
+import {
+  SiFirebase,
+  SiNextdotjs,
+  SiReactquery,
+  SiRedux,
+  SiTailwindcss,
+  SiTypescript,
+  SiAntdesign,
+  SiMui,
+  SiJest,
+  SiNodedotjs,
+  SiExpressvpn,
+} from "react-icons/si";
 import { FaBootstrap, FaHtml5 } from "react-icons/fa6";
 import { IoLogoJavascript } from "react-icons/io5";
+import { BsGithub, BsGitlab } from "react-icons/bs";
+import { FaReact } from "react-icons/fa";
 
 /**
  * An array of objects representing the user's skills, including the skill name and an icon component to display.
@@ -13,40 +27,32 @@ export const MySkills = [
     Icon: IoLogoReact,
   },
   {
-    name: "TailwindCss",
-    Icon: SiTailwindcss,
+    name: "React Native",
+    Icon: FaReact,
+  },
+  {
+    name: "TypeScript",
+    Icon: SiTypescript,
   },
   {
     name: "NextJs",
     Icon: SiNextdotjs,
   },
   {
-    name: "Html",
-    Icon: FaHtml5,
-  },
-  {
-    name:"Javascipt",
+    name: "JavaScript",
     Icon: IoLogoJavascript,
   },
   {
-    name:"typscript",
-    Icon: SiTypescript,
+    name: "TailwindCss",
+    Icon: SiTailwindcss,
   },
   {
-    name:"redux",
+    name: "redux",
     Icon: SiRedux,
-  },
-  {
-    name:"firebase",
-    Icon: SiFirebase,
   },
   {
     name: "React-Query",
     Icon: SiReactquery,
-  },
-  {
-    name: "react bootstrap",
-    Icon: FaBootstrap,
   },
   {
     name: "Ant Design",
@@ -55,6 +61,14 @@ export const MySkills = [
   {
     name: "material ui",
     Icon: SiMui,
+  },
+  {
+    name: "Html",
+    Icon: FaHtml5,
+  },
+  {
+    name: "react bootstrap",
+    Icon: FaBootstrap,
   },
   {
     name: "Jest",
@@ -67,6 +81,18 @@ export const MySkills = [
   {
     name: "express",
     Icon: SiExpressvpn,
+  },
+  {
+    name: "GitHub",
+    Icon: BsGithub,
+  },
+  {
+    name: "GitLab",
+    Icon: BsGitlab,
+  },
+  {
+    name: "firebase",
+    Icon: SiFirebase,
   },
 ];
 /**
@@ -114,4 +140,3 @@ export const MyLinkedin = "https://www.linkedin.com/in/nirajmakwana12/";
 export const MyGithub = "https://github.com/Nirajmakwana";
 
 export const MyEmail = "makwananiraj12994@gmail.com";
-

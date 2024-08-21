@@ -19,7 +19,9 @@ const Projects = () => {
               title={item.name}
               tech={item.TechName}
               link={item.link}
+              WorkLike={item.worklike}
               des={item.des}
+              WorklikeLink={item.WorklikeLink}
               key={item.id}
             />
           );

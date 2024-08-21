@@ -2,8 +2,18 @@ import React from "react";
 import { BsGithub } from "react-icons/bs";
 import { FaGlobe } from "react-icons/fa";
 import { NavigateToUrl } from "../GlobalFuncation";
+import { GoDot } from "react-icons/go";
 
-const ProjectsCard = ({ title, des, src, link, tech, code }) => {
+const ProjectsCard = ({
+  title,
+  des,
+  src,
+  link,
+  tech,
+  code,
+  WorkLike,
+  WorklikeLink,
+}) => {
   return (
     <div className="w-full p-4 xl:px-12 h-auto xl:py-10 rounded-lg shadow-shadowOne flex flex-col bg-gradient-to-r from-bodyColor to-[#202327] group hover:bg-gradient-to-b hover:from-gray-900 hover:gray-900 transition-colors duration-1000">
       {/* <div className="w-full h-[80%] overflow-hidden rounded-lg">
@@ -35,19 +45,31 @@ const ProjectsCard = ({ title, des, src, link, tech, code }) => {
               )}
             </div>
           </div>
+          {WorkLike !== undefined && (
+            <p className="text-sm t tracking-wide mt-3 mb-3 ">
+              Work Like:{" "}
+              <span
+                className="text-designColor cursor-pointer"
+                onClick={() => {
+                  NavigateToUrl(WorklikeLink);
+                }}
+              >
+                {WorkLike}
+              </span>
+            </p>
+          )}
           <p className="text-sm tracking-wide mt-3 mb-3 ">
             Tech Name: {Array.isArray(tech) && tech.join(", ")}
           </p>
-          <ul className="duration-300 text-ellipsis overflow-hidden line-clamp-2">
+          <ul className="duration-300 text-ellipsis overflow-hidden">
             {Array.isArray(des) &&
-              des.slice(0,2).map((item,index) => {
+              des.map((item, index) => {
                 return (
-                  <div key={item+index}>
-                  <li className="flex">
-                    <p className="text-sm mt-2 mb-2">
-                      {item}
-                    </p>
-                  </li>
+                  <div className="flex items-baseline" key={item + index}>
+                    <li className="flex items-start gap-2">
+                      <p className="text-sm mb-1 mt-1">&#x21c0;</p>
+                      <p className="text-sm mb-1 mt-1"> {item}</p>
+                    </li>
                   </div>
                 );
               })}

@@ -5,7 +5,12 @@ import { MyName } from "../../constants";
 
 const LeftBanner = () => {
   const [text] = useTypewriter({
-    words: ["Professional Coder.", "React Developer.", "UI Designer."],
+    words: [
+      "Professional Coder.",
+      "React Developer.",
+      "Team Leader.",
+      "UI/UX Designer.",
+    ],
     loop: true,
     typeSpeed: 20,
     deleteSpeed: 10,
@@ -16,25 +21,20 @@ const LeftBanner = () => {
       <div className="flex flex-col gap-5">
         <h4 className=" text-lg font-normal">WELCOME TO MY WORLD</h4>
         <h1 className="text-6xl font-bold text-white">
-          Hi, I'm{" "}
-          <span className="text-designColor capitalize">{MyName}</span>
+          Hi, I'm <span className="text-designColor capitalize">{MyName}</span>
         </h1>
         <h2 className="text-4xl font-bold text-white">
           a <span>{text}</span>
-          <Cursor
-            cursorBlinking="false"
-            cursorStyle="|"
-            cursorColor="#fff"
-          />
+          <Cursor cursorBlinking="false" cursorStyle="|" cursorColor="#fff" />
         </h2>
         <p className="text-base font-bodyFont leading-6 tracking-wide">
           I am a dynamic front-end developer with over three years and two
           months of experience in designing and maintaining user interfaces for
-          web applications. My expertise lies in translating intricate designs
+          web and mobile applications. My expertise lies in translating intricate designs
           and wireframes into high-quality, efficient code. With a deep
           understanding of best practices in accessibility, performance
           optimization, and SEO, I am dedicated to creating user-friendly and
-          engaging web applications that provide exceptional user experiences
+          engaging web and mobile applications that provide exceptional user experiences
         </p>
       </div>
       <Media />
