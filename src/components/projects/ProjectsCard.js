@@ -1,8 +1,7 @@
 import React from "react";
 import { BsGithub } from "react-icons/bs";
 import { FaGlobe } from "react-icons/fa";
-import { NavigateToUrl } from "../GlobalFuncation";
-import { GoDot } from "react-icons/go";
+import { NavigateToUrl } from "../GlobalFuncation"
 
 const ProjectsCard = ({
   title,
