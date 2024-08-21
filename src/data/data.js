@@ -77,7 +77,6 @@ export const ProjectsData = [
     TechName: ["Next.Js", "React.js", "Mui"],
     des: [
       "Create a content management for admin",
-      "Providing quality spiritual direction.",
       "Managing donations.",
       "Organizing events and sending emails to participants.",
     ],
@@ -87,10 +86,10 @@ export const ProjectsData = [
     TechName: ["Next.Js", "React.js", "Mui", "redux"],
     des: [
       "Doctors to manage patient X-rays and invoices medicine.",
-      "Create a content management for admin",
       "Nurse can see X-rays and assist Patients",
       "Patients can access invoices and check doctor availability and book appointment",
       "Admin can manage all users every role",
+      "Create a content management for admin",
     ],
   },
   {
@@ -99,11 +98,11 @@ export const ProjectsData = [
     worklike: "Upwork",
     WorklikeLink: "https://www.upwork.com/",
     des: [
-      "Freelancers can create their profile and services.",
-      "Customers can search for freelancers and services.",
+      "Freelancers and customers can create their profile",
+      "Customers can search for freelancers based on services.",
       "Customers can book services and make payments in crypto.",
       "Freelancers can manage their services and invoices and demand any one crypto currency.",
-      "Create a content management for admin",
+      "Freelancers and customers can chat with each other.",
     ],
   },
   {
@@ -112,10 +111,10 @@ export const ProjectsData = [
     worklike: "Uber",
     WorklikeLink: "https://www.uber.com/",
     des: [
-      "Student can take online classes and give exam",
-      "Create a content management for admin",
+      "Student can take online classes and give online exam",
       "Book driving lesson with driver with nearest location or any other location",
       "different payment like driving lesson fees, exam fees, license fees",
+      "track driver live location and driving lesson location",
       "Create a content management for admin"
     ],
   },
@@ -123,14 +122,14 @@ export const ProjectsData = [
     name: "HR Management Platform",
     TechName: ["React.js", "Mui", "redux"],
     des: [
+      "Create different users like senior HR junior HR admin candidate role and permissions",
       "Schedule interview throw video call",
       "manage candidate and assign to interviewer",
       "create online meeting with different HR and seniors",
-      "Share result in excel sheet and pdf with link",
       "Create questions answer set different marks",
       "Create a questions with different type like image question video question",
+      "Share result in excel sheet and pdf with link",
       "Manage employee attendance,leaves and their details",
-      "Create different users like senior HR junior HR admin candidate role and permissions",
     ],
   },
   {
@@ -139,8 +138,7 @@ export const ProjectsData = [
     WorklikeLink: "https://pay.google.com/",
     TechName: ["React.js", "Mui", "redux"],
     des: [
-      "Make payments With QR",
-      "Manage transactions",
+      "Make payments With QR ,phone number and bank details",
       "Make investment",
       "two factor authentication",
       "Manage wallets",
@@ -150,12 +148,12 @@ export const ProjectsData = [
     name: "Transshipment Network Platform.",
     TechName: ["React.js", "Mui", "redux"],
     des: [
-      "Create different users like buyer and seller",
-      "Create a content management for admin",
-      "Seller and buyer can book a container track container",
+      "Create different users like buyer, seller and admin",
+      "Seller and buyer can book a container and track container",
       "Seller and Buyer can adjust price off container and make request for price",
       "super admin can switch there role and give permission to other to change roles",
       "Manage payments in every currency",
+      "Create a content management for admin",
     ],
   },
   {
@@ -165,10 +163,10 @@ export const ProjectsData = [
     TechName: ["React.js", "Mui", "redux-toolkit"],
     des: [
       "Youtube video Url to PDF with AI",
-      "Create a content management for admin",
       "limited prompt for AI help",
       "Create PDF With different templates",
       "Integrate AI in PDF generator",
+      "Create a content management for admin",
     ],
   },
 ];
