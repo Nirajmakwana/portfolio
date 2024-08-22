@@ -1,5 +1,5 @@
 import { FaMobile } from "react-icons/fa";
-import { SiLiquibase, SiProgress } from "react-icons/si";
+import { SiProgress } from "react-icons/si";
 import { MdOutlineDesignServices, MdWeb } from "react-icons/md";
 import { GrPerformance, GrTestDesktop } from "react-icons/gr";
 
