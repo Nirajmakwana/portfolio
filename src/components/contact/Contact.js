@@ -1,7 +1,7 @@
 import React from "react";
 import Title from "../layouts/Title";
 import ContactLeft from "./ContactLeft";
-import MyResume from "../../../src/assets/NirajMakwana.pdf";
+import MyResume from "../../../src/assets/Niraj-Makwana.pdf";
 import { NavigateToUrl } from "../GlobalFuncation";
 
 const Contact = () => {
