@@ -65,7 +65,7 @@ export const ProjectsData = [
   },
   {
     name: "Transshipment Network Platform.",
-    TechName: ["React.js", "Mui", "redux","Formik"],
+    TechName: ["React.js", "Mui", "redux", "Formik"],
     des: [
       "Create different users like buyer, seller and admin",
       "Seller and buyer can book a container and track container",
@@ -79,7 +79,7 @@ export const ProjectsData = [
     name: "Digital Wallet System",
     worklike: "Google Pay",
     WorklikeLink: "https://pay.google.com/",
-    TechName: ["React.js", "Mui", "redux","Formik"],
+    TechName: ["React.js", "React-Native", "Mui", "redux", "Formik"],
     des: [
       "Make payments With QR ,phone number and bank details",
       "Make investment",
@@ -89,7 +89,7 @@ export const ProjectsData = [
   },
   {
     name: "HR Management Platform",
-    TechName: ["React.js", "Mui", "redux","Formik"],
+    TechName: ["React.js", "React-Native", "Mui", "redux", "Formik"],
     des: [
       "Create different users like senior HR junior HR admin candidate role and permissions",
       "Schedule interview throw video call",
@@ -103,7 +103,7 @@ export const ProjectsData = [
   },
   {
     name: "Innovative Driver Education",
-    TechName: ["React.js", "Mui", "redux","Formik"],
+    TechName: ["React.js", "React-Native", "Mui", "redux", "Formik"],
     worklike: "Uber",
     WorklikeLink: "https://www.uber.com/",
     des: [
@@ -116,7 +116,7 @@ export const ProjectsData = [
   },
   {
     name: "marketplace for digital services",
-    TechName: ["React.js", "Mui", "redux","Formik"],
+    TechName: ["React.js", "Mui", "redux", "Formik"],
     worklike: "Upwork",
     WorklikeLink: "https://www.upwork.com/",
     des: [
@@ -129,7 +129,7 @@ export const ProjectsData = [
   },
   {
     name: "Dental Hospital Management System",
-    TechName: ["Next.Js", "React.js", "Mui", "redux","Formik"],
+    TechName: ["Next.Js", "React.js", "Mui", "redux", "Formik"],
     des: [
       "Doctors to manage patient X-rays and invoices medicine.",
       "Nurse can see X-rays and assist Patients",
@@ -140,7 +140,7 @@ export const ProjectsData = [
   },
   {
     name: "Spiritual Guidance Platform",
-    TechName: ["Next.Js", "React.js", "Mui","Formik"],
+    TechName: ["Next.Js", "React.js", "Mui", "Formik"],
     des: [
       "Create a content management for admin",
       "Managing donations.",
