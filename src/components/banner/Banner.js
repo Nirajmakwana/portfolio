@@ -14,7 +14,7 @@ const Banner = () => {
     </section>
     <div className="flex flex-col xl:flex-row gap-6 lgl:gap-0 justify-between">
         <div className='w-full'>
-          <h2 className="text-base uppercase font-titleFont mb-4">
+          <h2 className="text-base uppercase font-titleFont xs:mt-10 mb-4">
             BEST SKILL ON
           </h2>
           <div className="grid xs:grid-cols-3  md:grid-cols-4 mdl:grid-cols-5 lgl:grid-cols-12 gap-4">
