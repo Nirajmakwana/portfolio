@@ -6,7 +6,6 @@ const Banner = () => {
   return (
     <div className='border-b-black pb-20 border-b-[1px]'>
     <section
-      id="home"
       className="w-full pt-10  flex flex-col gap-10 xl:gap-0 lgl:flex-row items-start font-titleFont "
     >
       <LeftBanner />

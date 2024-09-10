@@ -8,7 +8,7 @@ import Projects from "../../components/projects/Projects";
 
 const LandingPage = () => {
   return (
-    <div className="w-full h-auto bg-bodyColor text-lightText px-4">
+    <div className="w-full h-auto bg-bodyColor text-lightText px-4" id="home">
       <Navbar />
       <div className="max-w-screen-xl mx-auto">
         <Banner />
