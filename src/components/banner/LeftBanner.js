@@ -6,6 +6,7 @@ import { MyName } from "../../constants";
 const LeftBanner = () => {
   const [text] = useTypewriter({
     words: [
+      "Full-Stack Developer.",
       "Front-End Developer.",
       "React Developer.",
       "Team Leader.",
