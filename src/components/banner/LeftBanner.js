@@ -28,13 +28,21 @@ const LeftBanner = () => {
           <Cursor cursorBlinking="false" cursorStyle="|" cursorColor="#fff" />
         </h2>
         <p className="text-base font-bodyFont leading-6 tracking-wide">
-          I am a dynamic front-end developer with over three years and two
-          months of experience in designing and maintaining user interfaces for
-          web and mobile applications. My expertise lies in translating intricate designs
-          and wireframes into high-quality, efficient code. With a deep
-          understanding of best practices in accessibility, performance
-          optimization, and SEO, I am dedicated to creating user-friendly and
-          engaging web and mobile applications that provide exceptional user experiences
+          I’m a full-stack developer with a strong focus on building scalable
+          and user-friendly web and mobile applications. Skilled in both
+          front-end and back-end technologies including React, Next.js, React
+          Native, Node.js, and Express. I specialize in turning complex ideas
+          into seamless, high-performance digital experiences. Passionate about
+          clean code, accessibility, performance, and real-world
+          problem-solving. Always learning, growing, and delivering solutions
+          that make an impact.I’m a full-stack developer with a strong focus on
+          building scalable and user-friendly web and mobile applications.
+          Skilled in both front-end and back-end technologies including React,
+          Next.js, React Native, Node.js, and Express. I specialize in turning
+          complex ideas into seamless, high-performance digital experiences.
+          Passionate about clean code, accessibility, performance, and
+          real-world problem-solving. Always learning, growing, and delivering
+          solutions that make an impact.
         </p>
       </div>
       <Media />
