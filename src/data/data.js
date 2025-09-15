@@ -107,7 +107,6 @@ export const ProjectsData = [
     name: "Innovative Driver Education",
     link: "https://ecodrive.ae/en",
     TechName: ["React.js", "React-Native", "Mui", "redux", "Formik"],
-    worklike: "Uber",
     WorklikeLink: "https://www.uber.com/",
     des: [
       "Student can take online classes and give online exam",
