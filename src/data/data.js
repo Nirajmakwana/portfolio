@@ -51,6 +51,19 @@ export const featuresData = [
 
 export const ProjectsData = [
   {
+    name: "Transshipment Network Platform.",
+    TechName: ["React.js", "Mui", "redux", "Formik"],
+    link: "https://www.slotxpert.com/",
+    des: [
+      "Create different users like buyer, seller and admin",
+      "Seller and buyer can book a container and track container",
+      "Seller and Buyer can adjust price off container and make request for price",
+      "super admin can switch there role and give permission to other to change roles",
+      "Manage payments in every currency",
+      "Create a content management for admin",
+    ],
+  },
+  {
     name: "Design Studio App.",
     worklike: "Canva",
     WorklikeLink: "https://www.canva.com/",
@@ -60,18 +73,6 @@ export const ProjectsData = [
       "limited prompt for AI help",
       "Create PDF With different templates",
       "Integrate AI in PDF generator",
-      "Create a content management for admin",
-    ],
-  },
-  {
-    name: "Transshipment Network Platform.",
-    TechName: ["React.js", "Mui", "redux", "Formik"],
-    des: [
-      "Create different users like buyer, seller and admin",
-      "Seller and buyer can book a container and track container",
-      "Seller and Buyer can adjust price off container and make request for price",
-      "super admin can switch there role and give permission to other to change roles",
-      "Manage payments in every currency",
       "Create a content management for admin",
     ],
   },
@@ -89,6 +90,7 @@ export const ProjectsData = [
   },
   {
     name: "HR Management Platform",
+    link: "https://www.shrm.org/home",
     TechName: ["React.js", "React-Native", "Mui", "redux", "Formik"],
     des: [
       "Create different users like senior HR junior HR admin candidate role and permissions",
@@ -103,6 +105,7 @@ export const ProjectsData = [
   },
   {
     name: "Innovative Driver Education",
+    link: "https://ecodrive.ae/en",
     TechName: ["React.js", "React-Native", "Mui", "redux", "Formik"],
     worklike: "Uber",
     WorklikeLink: "https://www.uber.com/",
@@ -140,6 +143,7 @@ export const ProjectsData = [
   },
   {
     name: "Spiritual Guidance Platform",
+    link: "https://seekdirection.app/#/home",
     TechName: ["Next.Js", "React.js", "Mui", "Formik"],
     des: [
       "Create a content management for admin",

@@ -13,7 +13,16 @@ const Projects = () => {
         <Title title="VISIT MY PROJECTS" des="My Projects" />
       </div>
       <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-14">
-        {ProjectsData.map((item) => {
+        {ProjectsData.sort((a, b) => {
+          if (a.link && !b.link) {
+            return -1; // a first
+          }
+          if (!a.link && b.link) {
+            return 1; // b first
+          }
+
+          return 0; // no change
+        }).map((item) => {
           return (
             <ProjectsCard
               title={item.name}
