@@ -1,14 +1,30 @@
-import React from 'react'
+import React from "react";
 
-const Title = ({title, des}) => {
+const Title = ({ title, des, align = "left", subtitle }) => {
+  const alignmentClasses =
+    align === "center"
+      ? "text-center items-center"
+      : "text-left items-start";
+
   return (
-    <div className="flex flex-col gap-4 font-titleFont mb-14">
-      <h3 className="text-sm uppercase font-light text-designColor tracking-wide">
-       {title}
-      </h3>
-      <h1 className="text-4xl md:text-5xl text-gray-300 font-bold capitalize">{des}</h1>
+    <div className={`flex flex-col ${alignmentClasses} mb-12 sm:mb-16`}>
+      {title && (
+        <span className="sectionTitlePill">
+          {title}
+        </span>
+      )}
+      {des && (
+        <h2 className="text-3xl sm:text-4xl lg:text-5xl font-bold font-titleFont text-slate-900 dark:text-white tracking-tight">
+          {des}
+        </h2>
+      )}
+      {subtitle && (
+        <p className="mt-3 text-base sm:text-lg text-slate-600 dark:text-slate-400 max-w-2xl">
+          {subtitle}
+        </p>
+      )}
     </div>
   );
-}
+};
 
-export default Title
+export default Title;

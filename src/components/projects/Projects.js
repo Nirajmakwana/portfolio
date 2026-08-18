@@ -1,41 +1,100 @@
-import React from "react";
+import React, { useState } from "react";
 import Title from "../layouts/Title";
 import ProjectsCard from "./ProjectsCard";
+import ProjectModal from "./ProjectModal";
 import { ProjectsData } from "../../data/data";
 
 const Projects = () => {
-  return (
-    <section
-      id="projects"
-      className="w-full py-20 border-b-[1px] border-b-black"
-    >
-      <div className="flex justify-center items-center text-center">
-        <Title title="VISIT MY PROJECTS" des="My Projects" />
-      </div>
-      <div className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-6 xl:gap-14">
-        {ProjectsData.sort((a, b) => {
-          if (a.link && !b.link) {
-            return -1; // a first
-          }
-          if (!a.link && b.link) {
-            return 1; // b first
-          }
+  const [activeFilter, setActiveFilter] = useState("all");
+  const [selectedProject, setSelectedProject] = useState(null);
 
-          return 0; // no change
-        }).map((item) => {
-          return (
-            <ProjectsCard
-              title={item.name}
-              tech={item.TechName}
-              link={item.link}
-              WorkLike={item.worklike}
-              des={item.des}
-              WorklikeLink={item.WorklikeLink}
-              key={item.id}
-            />
-          );
-        })}
+  const filters = [
+    { id: "all", label: "All Projects", count: ProjectsData.length },
+    {
+      id: "featured",
+      label: "Featured",
+      count: ProjectsData.filter((p) => p.featured).length,
+    },
+    {
+      id: "web",
+      label: "Web Apps",
+      count: ProjectsData.filter((p) => p.category === "web").length,
+    },
+    {
+      id: "mobile",
+      label: "Mobile / React Native",
+      count: ProjectsData.filter((p) => p.category === "mobile").length,
+    },
+    {
+      id: "fullstack",
+      label: "Full Stack & Next.js",
+      count: ProjectsData.filter((p) => p.category === "fullstack").length,
+    },
+  ];
+
+  const filteredProjects = ProjectsData.filter((project) => {
+    if (activeFilter === "all") return true;
+    if (activeFilter === "featured") return project.featured;
+    return project.category === activeFilter;
+  });
+
+  return (
+    <section id="projects" className="w-full py-16 sm:py-24 border-b border-slate-200/80 dark:border-slate-800/80">
+      <div className="flex flex-col md:flex-row md:items-end justify-between mb-8">
+        <Title
+          title="Portfolio Showcase"
+          des="Featured Engineering Work"
+          subtitle="Explore selected enterprise platforms, mobile applications, and software tools built with modern React ecosystems."
+        />
       </div>
+
+      {/* Filter Tabs */}
+      <div className="flex flex-wrap items-center gap-2 mb-10" role="tablist" aria-label="Project Category Filters">
+        {filters.map((filter) => (
+          <button
+            key={filter.id}
+            onClick={() => setActiveFilter(filter.id)}
+            role="tab"
+            aria-selected={activeFilter === filter.id}
+            className={`inline-flex items-center gap-1.5 px-4 py-2 rounded-xl text-xs sm:text-sm font-medium transition-all ${
+              activeFilter === filter.id
+                ? "bg-sky-600 text-white shadow-sm"
+                : "bg-white dark:bg-slate-800/80 text-slate-600 dark:text-slate-300 border border-slate-200 dark:border-slate-700/60 hover:border-sky-500/50 hover:text-sky-600 dark:hover:text-sky-400"
+            }`}
+            type="button"
+          >
+            <span>{filter.label}</span>
+            <span
+              className={`text-[10px] px-1.5 py-0.5 rounded-full ${
+                activeFilter === filter.id
+                  ? "bg-sky-700 text-sky-100"
+                  : "bg-slate-100 dark:bg-slate-700 text-slate-500 dark:text-slate-400"
+              }`}
+            >
+              {filter.count}
+            </span>
+          </button>
+        ))}
+      </div>
+
+      {/* Projects Grid */}
+      <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        {filteredProjects.map((project) => (
+          <ProjectsCard
+            key={project.id}
+            project={project}
+            onOpenDetails={(p) => setSelectedProject(p)}
+          />
+        ))}
+      </div>
+
+      {/* Project Details Modal */}
+      {selectedProject && (
+        <ProjectModal
+          project={selectedProject}
+          onClose={() => setSelectedProject(null)}
+        />
+      )}
     </section>
   );
 };

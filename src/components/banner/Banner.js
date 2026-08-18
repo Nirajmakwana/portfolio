@@ -1,55 +1,49 @@
-import React from 'react'
-import LeftBanner from './LeftBanner';
-import RightBanner from './RightBanner';
-import { MySkills } from '../../constants';
+import React from "react";
+import { motion } from "framer-motion";
+import LeftBanner from "./LeftBanner";
+import RightBanner from "./RightBanner";
+import { HighlightSkills } from "../../constants";
+
 const Banner = () => {
   return (
-    <div className='border-b-black pb-20 border-b-[1px]'>
     <section
-      className="w-full pt-10  flex flex-col gap-10 xl:gap-0 lgl:flex-row items-start font-titleFont "
+      id="home"
+      className="w-full pt-6 sm:pt-10 pb-16 sm:pb-24 border-b border-slate-200/80 dark:border-slate-800/80"
     >
-      <LeftBanner />
-     <RightBanner />
-    </section>
-    <div className="flex flex-col xl:flex-row gap-6 lgl:gap-0 justify-between">
-        <div className='w-full'>
-          <h2 className="text-base uppercase font-titleFont xs:mt-10 mb-4">
-            BEST SKILL ON
-          </h2>
-          <div className="grid xs:grid-cols-3  md:grid-cols-4 mdl:grid-cols-5 lgl:grid-cols-12 gap-4">
-            {MySkills.map((item) => {
-              return (
-                <div
-                  key={item.name}
-                  className="bannerIcon group p-10"
-                  title="React"
-                >
-                  <div>
-                    <div className="flex justify-center">
-                      {item.Icon !== "" ? <item.Icon /> : ""}
-                    </div>
-                    <p className="text-xs text-center capitalize group-hover:text-designColor text-gray-400 flex items-center gap-2 text-ellipsis">
-                      {item.name}
-                    </p>
-                  </div>
-                </div>
-              );
-            })}
+      <motion.div
+        initial={{ opacity: 0, y: 15 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5 }}
+        className="w-full flex flex-col-reverse lgl:flex-row items-center gap-12 lgl:gap-8 justify-between"
+      >
+        <LeftBanner />
+        <RightBanner />
+      </motion.div>
 
-            {/* <span className="bannerIcon">
-              <SiNextdotjs />
-            </span>
-            <span className="bannerIcon">
-              <SiTailwindcss />
-            </span>
-            <span className="bannerIcon">
-              <SiFigma />
-            </span> */}
-          </div>
+      {/* Quick Tech Stack Bar */}
+      <motion.div
+        initial={{ opacity: 0, y: 15 }}
+        animate={{ opacity: 1, y: 0 }}
+        transition={{ duration: 0.5, delay: 0.2 }}
+        className="mt-14 pt-8 border-t border-slate-200/60 dark:border-slate-800/60"
+      >
+        <p className="text-xs uppercase font-semibold tracking-wider text-slate-500 dark:text-slate-400 mb-4 text-center sm:text-left">
+          Core Technologies & Ecosystem
+        </p>
+        <div className="flex flex-wrap items-center justify-center sm:justify-start gap-2.5 sm:gap-3">
+          {HighlightSkills.map(({ name, Icon }) => (
+            <div
+              key={name}
+              className="inline-flex items-center gap-2 px-3.5 py-2 rounded-xl bg-white dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700/60 text-slate-700 dark:text-slate-300 text-xs font-medium shadow-sm hover:border-sky-500/50 hover:text-sky-600 dark:hover:text-sky-400 transition-colors"
+            >
+              {Icon && <Icon className="w-4 h-4 text-sky-600 dark:text-sky-400" />}
+              <span>{name}</span>
+            </div>
+          ))}
         </div>
-      </div>
-    </div>
+      </motion.div>
+    </section>
   );
-}
+};
 
-export default Banner
+export default Banner;

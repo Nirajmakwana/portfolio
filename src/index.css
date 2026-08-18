@@ -1,29 +1,84 @@
-@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&family=Montserrat:wght@400;500;600;700&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
-@layer components{
-    .bannerIcon{
-        @apply w-16 h-16 bg-black bg-opacity-25 text-gray-200 text-xl inline-flex items-center justify-center rounded-md shadow-shadowOne hover:bg-opacity-40 hover:-translate-y-1 transition-all hover:text-designColor cursor-pointer duration-300;
-    }
-    .resumeLi {
-    @apply w-full h-20 bg-black bg-opacity-25 text-xl text-gray-300 flex justify-center cursor-pointer hover:bg-opacity-40 duration-300 items-center border-[1px] rounded-none;
-         }
-.bgOpacity {
-@apply bg-black bg-opacity-40;
-                  }
-    .contactInput{
-        @apply w-full h-12 rounded-lg border-b-[1px] border-b-gray-600 bg-[#191b1e] text-lightText px-4 active:outline-none focus-visible:outline-designColor outline-none focus-visible:border-b-transparent duration-300
-    }
-.contactTextArea{
-    @apply w-full rounded-lg border-b-[1px] border-b-gray-600 bg-[#191b1e] text-lightText px-4 py-2 active:outline-none focus-visible:outline-designColor outline-none focus-visible:border-b-transparent duration-300 resize-none
-}
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  body {
+    @apply font-bodyFont bg-bodyColor-light text-slate-700 dark:bg-bodyColor dark:text-slate-300 transition-colors duration-200 selection:bg-sky-500 selection:text-white;
+  }
+
+  /* Accessible focus indicators */
+  :focus-visible {
+    @apply outline-none ring-2 ring-sky-500 ring-offset-2 ring-offset-slate-900 dark:ring-offset-slate-900;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-titleFont text-slate-900 dark:text-slate-100;
+  }
 }
 
-.active {
-    color: white;
+@layer components {
+  .bannerIcon {
+    @apply w-12 h-12 rounded-xl bg-slate-100 dark:bg-slate-800/80 border border-slate-200 dark:border-slate-700/60 text-slate-600 dark:text-slate-300 inline-flex items-center justify-center text-lg hover:text-sky-600 dark:hover:text-sky-400 hover:border-sky-500/50 hover:shadow-md hover:-translate-y-0.5 transition-all duration-200 cursor-pointer;
+  }
+
+  .primaryBtn {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-sky-600 hover:bg-sky-500 text-white font-medium text-sm shadow-md hover:shadow-lg shadow-sky-600/20 hover:-translate-y-0.5 transition-all duration-200 cursor-pointer;
+  }
+
+  .secondaryBtn {
+    @apply inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-200 border border-slate-200 dark:border-slate-700 font-medium text-sm hover:-translate-y-0.5 transition-all duration-200 cursor-pointer;
+  }
+
+  .sectionTitlePill {
+    @apply inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full text-xs font-semibold uppercase tracking-wider bg-sky-50 dark:bg-sky-950/60 text-sky-600 dark:text-sky-400 border border-sky-200 dark:border-sky-800/60 mb-3;
+  }
+
+  .portfolioCard {
+    @apply bg-white dark:bg-slate-800/70 border border-slate-200/80 dark:border-slate-700/50 rounded-2xl p-6 sm:p-8 shadow-cardLight dark:shadow-cardDark hover:shadow-cardHoverLight dark:hover:shadow-cardHoverDark hover:border-sky-500/30 dark:hover:border-sky-500/30 transition-all duration-300;
+  }
+
+  .contactInput {
+    @apply w-full h-12 rounded-xl border border-slate-200 dark:border-slate-700/80 bg-slate-50 dark:bg-slate-900/60 text-slate-900 dark:text-slate-100 px-4 text-sm focus:border-sky-500 focus:bg-white dark:focus:bg-slate-900 transition-colors duration-200;
+  }
+
+  .contactTextArea {
+    @apply w-full rounded-xl border border-slate-200 dark:border-slate-700/80 bg-slate-50 dark:bg-slate-900/60 text-slate-900 dark:text-slate-100 p-4 text-sm focus:border-sky-500 focus:bg-white dark:focus:bg-slate-900 transition-colors duration-200 resize-none;
+  }
 }
-.scrollbar-hide::-webkit-scrollbar{
-    display: none;
+
+/* Active navigation link styling */
+.active-nav-link {
+  @apply text-sky-600 dark:text-sky-400 font-semibold;
+}
+
+/* Reduced motion support */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Custom modern scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  @apply bg-slate-100 dark:bg-slate-900;
+}
+
+::-webkit-scrollbar-thumb {
+  @apply bg-slate-300 dark:bg-slate-700 rounded-full hover:bg-slate-400 dark:hover:bg-slate-600;
 }
