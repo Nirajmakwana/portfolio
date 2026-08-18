@@ -39,7 +39,7 @@ const About = () => {
         {/* Left Column: Narrative Summary */}
         <div className="lg:col-span-6 flex flex-col gap-5 text-base sm:text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
           <p>
-            I am a <strong className="font-semibold text-slate-900 dark:text-white">Senior Frontend Engineer</strong> with <strong className="font-semibold text-slate-900 dark:text-white">{YearsExperience} years of experience</strong> architecting, developing, and deploying production-grade web and mobile applications.
+            I am a <strong className="font-semibold text-slate-900 dark:text-white">Senior Full Stack Developer</strong> with <strong className="font-semibold text-slate-900 dark:text-white">{YearsExperience} years of experience</strong> architecting, developing, and deploying production-grade web and mobile applications.
           </p>
           <p>
             My core technical expertise is anchored in the <strong className="font-semibold text-slate-900 dark:text-white">React ecosystem (React.js, React Native, Next.js, TypeScript)</strong>, advanced client-state architectures (<strong className="font-semibold text-slate-900 dark:text-white">Redux Toolkit, React Query</strong>), and modern design systems (<strong className="font-semibold text-slate-900 dark:text-white">Tailwind CSS, Material UI, Ant Design</strong>).

@@ -27,7 +27,7 @@ import { FiCheckCircle } from "react-icons/fi";
  * User personal and contact constants
  */
 export const MyName = "Niraj Makwana";
-export const MyRole = "Senior Frontend Engineer";
+export const MyRole = "Senior Full Stack Developer";
 export const MyNumber = "+919033574679";
 export const MyFormattedPhone = "+91 90335 74679";
 export const MyEmail = "makwananiraj12994@gmail.com";

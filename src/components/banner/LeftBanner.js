@@ -9,7 +9,7 @@ import Media from "./Media";
 const LeftBanner = () => {
   const [text] = useTypewriter({
     words: [
-      "Senior Frontend Engineer.",
+      "Senior Full Stack Developer.",
       "React & Next.js Specialist.",
       "React Native Mobile Engineer.",
       "Frontend Architect & Team Lead.",
@@ -25,7 +25,7 @@ const LeftBanner = () => {
       {/* Intro Badges */}
       <div className="flex flex-wrap items-center gap-3">
         <span className="sectionTitlePill !mb-0">
-          Senior Frontend Engineer
+          Senior Full Stack Developer
         </span>
         <span className="inline-flex items-center gap-1.5 px-3 py-1 rounded-full text-xs font-medium bg-emerald-50 dark:bg-emerald-950/50 text-emerald-600 dark:text-emerald-400 border border-emerald-200 dark:border-emerald-800/60">
           <span className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></span>
@@ -46,7 +46,7 @@ const LeftBanner = () => {
 
       {/* Recruiter-Friendly Experience-Driven Summary */}
       <p className="text-base sm:text-lg text-slate-600 dark:text-slate-400 leading-relaxed max-w-2xl">
-        Senior Frontend Engineer with 5+ years of experience building scalable, production-ready web and mobile applications. Deeply specialized in <strong className="font-semibold text-slate-900 dark:text-slate-200">React.js</strong>, <strong className="font-semibold text-slate-900 dark:text-slate-200">React Native</strong>, <strong className="font-semibold text-slate-900 dark:text-slate-200">TypeScript</strong>, and <strong className="font-semibold text-slate-900 dark:text-slate-200">Next.js</strong>, with hands-on backend expertise in <strong className="font-semibold text-slate-900 dark:text-slate-200">Node.js</strong> and <strong className="font-semibold text-slate-900 dark:text-slate-200">Express.js</strong>. I architect resilient, accessible, and high-performance applications from design system foundation to cloud deployment.
+        Senior Full Stack Developer with 5+ years of experience building scalable, production-ready web and mobile applications. Deeply specialized in <strong className="font-semibold text-slate-900 dark:text-slate-200">React.js</strong>, <strong className="font-semibold text-slate-900 dark:text-slate-200">React Native</strong>, <strong className="font-semibold text-slate-900 dark:text-slate-200">TypeScript</strong>, and <strong className="font-semibold text-slate-900 dark:text-slate-200">Next.js</strong>, with hands-on backend expertise in <strong className="font-semibold text-slate-900 dark:text-slate-200">Node.js</strong> and <strong className="font-semibold text-slate-900 dark:text-slate-200">Express.js</strong>. I architect resilient, accessible, and high-performance applications from design system foundation to cloud deployment.
       </p>
 
       {/* Action Buttons / CTAs */}

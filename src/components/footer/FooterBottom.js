@@ -26,7 +26,7 @@ const FooterBottom = () => {
               {MyName}
             </h3>
             <p className="text-xs text-slate-500 dark:text-slate-400">
-              Senior Frontend Engineer
+              Senior Full Stack Developer
             </p>
           </div>
         </div>

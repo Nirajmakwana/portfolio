@@ -56,11 +56,10 @@ const Navbar = () => {
 
   return (
     <header
-      className={`w-full h-20 sticky top-0 z-50 transition-all duration-300 ${
-        scrolled
+      className={`w-full h-20 sticky top-0 z-50 transition-all duration-300 ${scrolled
           ? "bg-white/90 dark:bg-slate-900/90 backdrop-blur-md shadow-sm border-b border-slate-200/80 dark:border-slate-800/80"
           : "bg-transparent border-b border-transparent"
-      }`}
+        }`}
     >
       <div className="max-w-7xl mx-auto h-full px-4 sm:px-6 lg:px-8 flex justify-between items-center">
         {/* Brand Logo & Name */}
@@ -83,7 +82,7 @@ const Navbar = () => {
               {MyName}
             </span>
             <span className="text-[11px] font-medium text-slate-500 dark:text-slate-400 -mt-1 hidden sm:block">
-              Senior Frontend Engineer
+              Senior Full Stack Developer
             </span>
           </div>
         </Link>
@@ -190,7 +189,7 @@ const Navbar = () => {
                     <h3 className="font-titleFont font-bold text-slate-900 dark:text-white text-base">
                       {MyName}
                     </h3>
-                    <p className="text-xs text-slate-500 dark:text-slate-400">Senior Frontend Engineer</p>
+                    <p className="text-xs text-slate-500 dark:text-slate-400">Senior Full Stack Developer</p>
                   </div>
                 </div>
                 <button

@@ -24,7 +24,7 @@ const ContactLeft = () => {
             {MyName}
           </h3>
           <p className="text-sm font-semibold text-sky-600 dark:text-sky-400 mt-0.5">
-            Senior Frontend Engineer
+            Senior Full Stack Developer
           </p>
         </div>
 
