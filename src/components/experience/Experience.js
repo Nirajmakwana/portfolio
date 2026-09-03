@@ -2,7 +2,6 @@ import React from "react";
 import Title from "../layouts/Title";
 import { ExperienceData } from "../../data/data";
 import { FiBriefcase, FiCalendar, FiMapPin, FiCheckCircle, FiDownload, FiFolder } from "react-icons/fi";
-import MyResumePdf from "../../assets/Niraj-Makwana.pdf";
 import { dynamicResumeName } from "../../constants";
 
 const Experience = () => {

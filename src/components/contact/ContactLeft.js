@@ -11,7 +11,6 @@ import {
   MyLocation,
   dynamicResumeName,
 } from "../../constants";
-import MyResumePdf from "../../assets/Niraj-Makwana.pdf";
 
 const ContactLeft = () => {
   return (

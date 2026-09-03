@@ -4,7 +4,6 @@ import { FiMenu, FiSun, FiMoon, FiDownload } from "react-icons/fi";
 import { MdClose } from "react-icons/md";
 import { FaLinkedinIn, FaGithub, FaWhatsapp } from "react-icons/fa";
 import { logo } from "../../assets/index";
-import MyResumePdf from "../../assets/Niraj-Makwana.pdf";
 import {
   dynamicResumeName,
   MyGithub,
