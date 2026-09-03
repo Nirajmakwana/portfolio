@@ -1,7 +1,5 @@
-import React from "react";
 import { bannerImg } from "../../assets/index";
 import { SiNodedotjs, SiReact } from "react-icons/si";
-import { TbBrandReactNative } from "react-icons/tb";
 
 const RightBanner = () => {
   return (
