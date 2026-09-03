@@ -3,7 +3,6 @@ import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { Link } from "react-scroll";
 import { FiArrowRight, FiDownload, FiMail } from "react-icons/fi";
 import { dynamicResumeName, MyName, YearsExperience } from "../../constants";
-import MyResumePdf from "/";
 import Media from "./Media";
 
 const LeftBanner = () => {
