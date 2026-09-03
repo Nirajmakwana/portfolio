@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useMemo } from "react";
 import Title from "../layouts/Title";
 import ProjectsCard from "./ProjectsCard";
 import ProjectModal from "./ProjectModal";
@@ -8,6 +8,13 @@ const Projects = () => {
   const [activeFilter, setActiveFilter] = useState("all");
   const [selectedProject, setSelectedProject] = useState(null);
 
+  // Derive unique categories dynamically from ProjectsData
+  const categorySet = useMemo(() => {
+    const cats = new Set();
+    ProjectsData.forEach((p) => cats.add(p.category));
+    return Array.from(cats);
+  }, []);
+
   const filters = [
     { id: "all", label: "All Projects", count: ProjectsData.length },
     {
@@ -15,21 +22,11 @@ const Projects = () => {
       label: "Featured",
       count: ProjectsData.filter((p) => p.featured).length,
     },
-    {
-      id: "web",
-      label: "Web Apps",
-      count: ProjectsData.filter((p) => p.category === "web").length,
-    },
-    {
-      id: "mobile",
-      label: "Mobile / React Native",
-      count: ProjectsData.filter((p) => p.category === "mobile").length,
-    },
-    {
-      id: "fullstack",
-      label: "Full Stack & Next.js",
-      count: ProjectsData.filter((p) => p.category === "fullstack").length,
-    },
+    ...categorySet.map((cat) => ({
+      id: cat,
+      label: cat,
+      count: ProjectsData.filter((p) => p.category === cat).length,
+    })),
   ];
 
   const filteredProjects = ProjectsData.filter((project) => {
@@ -87,6 +84,13 @@ const Projects = () => {
           />
         ))}
       </div>
+
+      {/* Empty State */}
+      {filteredProjects.length === 0 && (
+        <div className="text-center py-16 text-slate-400 dark:text-slate-500">
+          <p className="text-sm">No projects found in this category.</p>
+        </div>
+      )}
 
       {/* Project Details Modal */}
       {selectedProject && (

@@ -40,14 +40,33 @@ describe("Niraj Makwana Portfolio Test Suite", () => {
     expect(screen.getAllByText(/Groovy Web/i).length).toBeGreaterThan(0);
   });
 
+  test("renders project cards with titles from ProjectsData", () => {
+    render(<App />);
+    // Verify key projects render with their new title field
+    expect(screen.getByText("iAudix")).toBeInTheDocument();
+    expect(screen.getByText("iSail Marine")).toBeInTheDocument();
+    expect(screen.getByText("SlotXpert")).toBeInTheDocument();
+  });
+
   test("filters projects when category button is clicked", () => {
     render(<App />);
-    const mobileFilterBtn = screen.getByRole("tab", { name: /Mobile \/ React Native/i });
-    expect(mobileFilterBtn).toBeInTheDocument();
-    fireEvent.click(mobileFilterBtn);
+    // The new data uses "Mobile + Web" as a category value
+    const mobileFilter = screen.getByRole("tab", { name: /Mobile \+ Web/i });
+    expect(mobileFilter).toBeInTheDocument();
+    fireEvent.click(mobileFilter);
 
-    // Verify mobile projects render
-    expect(screen.getByText(/Digital Wallet & Fintech System/i)).toBeInTheDocument();
+    // Verify a Mobile + Web project renders
+    expect(screen.getByText("Digital Wallet")).toBeInTheDocument();
+  });
+
+  test("filters featured projects correctly", () => {
+    render(<App />);
+    const featuredFilter = screen.getByRole("tab", { name: /Featured/i });
+    fireEvent.click(featuredFilter);
+
+    // Featured projects should be visible
+    expect(screen.getByText("iAudix")).toBeInTheDocument();
+    expect(screen.getByText("EcoDrive")).toBeInTheDocument();
   });
 
   test("opens and closes project details case study modal", () => {
@@ -63,6 +82,26 @@ describe("Niraj Makwana Portfolio Test Suite", () => {
     // Close modal
     fireEvent.click(screen.getByText(/Close Details/i));
     expect(screen.queryByText(/Case Study & Technical Overview/i)).not.toBeInTheDocument();
+  });
+
+  test("modal displays project details with new data fields", () => {
+    render(<App />);
+    const detailButtons = screen.getAllByText(/Architecture & Details/i);
+
+    // Open modal for first project (iAudix)
+    fireEvent.click(detailButtons[0]);
+
+    // Verify modal renders new fields
+    expect(screen.getByText("Overview")).toBeInTheDocument();
+    expect(screen.getByText(/Technical Challenge/i)).toBeInTheDocument();
+    expect(screen.getByText(/Architectural Solution/i)).toBeInTheDocument();
+    expect(screen.getByText(/Key Features & Engineering Contributions/i)).toBeInTheDocument();
+
+    // Verify technology from the new technologies array
+    expect(screen.getByText("Tailwind CSS")).toBeInTheDocument();
+
+    // Close
+    fireEvent.click(screen.getByText(/Close Details/i));
   });
 
   test("validates required fields in contact form", () => {

@@ -6,6 +6,7 @@ import { FaLinkedinIn, FaGithub, FaWhatsapp } from "react-icons/fa";
 import { logo } from "../../assets/index";
 import MyResumePdf from "../../assets/Niraj-Makwana.pdf";
 import {
+  dynamicResumeName,
   MyGithub,
   MyLinkedin,
   MyName,
@@ -57,8 +58,8 @@ const Navbar = () => {
   return (
     <header
       className={`w-full h-20 sticky top-0 z-50 transition-all duration-300 ${scrolled
-          ? "bg-white/90 dark:bg-slate-900/90 backdrop-blur-md shadow-sm border-b border-slate-200/80 dark:border-slate-800/80"
-          : "bg-transparent border-b border-transparent"
+        ? "bg-white/90 dark:bg-slate-900/90 backdrop-blur-md shadow-sm border-b border-slate-200/80 dark:border-slate-800/80"
+        : "bg-transparent border-b border-transparent"
         }`}
     >
       <div className="max-w-7xl mx-auto h-full px-4 sm:px-6 lg:px-8 flex justify-between items-center">
@@ -121,7 +122,7 @@ const Navbar = () => {
             {/* Resume CTA */}
             <a
               href={MyResumePdf}
-              download="Niraj-Makwana-Resume.pdf"
+              download={dynamicResumeName}
               className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-200 text-xs font-semibold border border-slate-200 dark:border-slate-700 transition-all focus-visible:ring-2 focus-visible:ring-sky-500"
               aria-label="Download Niraj Makwana's Resume"
             >
@@ -227,7 +228,7 @@ const Navbar = () => {
             <div className="pt-6 border-t border-slate-200 dark:border-slate-800 flex flex-col gap-4">
               <a
                 href={MyResumePdf}
-                download="Niraj-Makwana-Resume.pdf"
+                download={dynamicResumeName}
                 className="w-full primaryBtn text-center"
               >
                 <FiDownload className="w-4 h-4" />

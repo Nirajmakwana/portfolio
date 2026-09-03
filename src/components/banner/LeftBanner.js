@@ -2,7 +2,7 @@ import React from "react";
 import { useTypewriter, Cursor } from "react-simple-typewriter";
 import { Link } from "react-scroll";
 import { FiArrowRight, FiDownload, FiMail } from "react-icons/fi";
-import { MyName, YearsExperience } from "../../constants";
+import { dynamicResumeName, MyName, YearsExperience } from "../../constants";
 import MyResumePdf from "../../assets/Niraj-Makwana.pdf";
 import Media from "./Media";
 
@@ -65,7 +65,7 @@ const LeftBanner = () => {
 
         <a
           href={MyResumePdf}
-          download="Niraj-Makwana-Resume.pdf"
+          download={dynamicResumeName}
           className="secondaryBtn group"
           aria-label="Download Niraj Makwana Resume"
         >

@@ -2,28 +2,45 @@ import React from "react";
 import Title from "../layouts/Title";
 import { FiCode, FiLayers, FiZap, FiUsers } from "react-icons/fi";
 import { YearsExperience } from "../../constants";
+import { ExperienceData, ProjectsData } from "../../data/data";
 
 const About = () => {
   const highlights = [
     {
       icon: <FiCode className="w-6 h-6 text-sky-600 dark:text-sky-400" />,
+      title: "Full Stack Development",
+      description:
+        "Building end-to-end applications across frontend and backend using React.js, React Native, Next.js, TypeScript, Node.js, Express.js, REST APIs, and modern database-driven architectures.",
+    },
+    {
+      icon: <FiUsers className="w-6 h-6 text-sky-600 dark:text-sky-400" />,
+      title: "Technical Leadership & Team Management",
+      description:
+        "Leading development teams, distributing technical tasks, conducting structured code reviews, mentoring developers, and driving architectural decisions aligned with business goals.",
+    },
+    {
+      icon: <FiLayers className="w-6 h-6 text-sky-600 dark:text-sky-400" />,
       title: "Frontend Architecture & Systems",
-      description: "Designing modular, component-driven web architectures using React.js, Next.js, and TypeScript for long-term scalability.",
+      description:
+        "Designing scalable, modular, component-driven frontend architectures using React.js, Next.js, TypeScript, Redux, and reusable design systems.",
     },
     {
       icon: <FiZap className="w-6 h-6 text-sky-600 dark:text-sky-400" />,
       title: "Performance & Optimization",
-      description: "Conducting Lighthouse audits, analyzing bundle sizes, eliminating unnecessary re-renders, and optimizing page load speeds.",
+      description:
+        "Conducting Lighthouse audits, analyzing bundle sizes, reducing unnecessary re-renders, optimizing rendering performance, and improving page load speeds.",
     },
     {
       icon: <FiLayers className="w-6 h-6 text-sky-600 dark:text-sky-400" />,
-      title: "Cross-Platform & UI Systems",
-      description: "Building iOS/Android mobile apps with React Native, and design systems using Tailwind CSS, MUI, and Ant Design with strict WCAG compliance.",
+      title: "Cross-Platform Development",
+      description:
+        "Building production-ready iOS and Android applications with React Native while maintaining shared architecture, reusable components, and consistent user experiences.",
     },
     {
-      icon: <FiUsers className="w-6 h-6 text-sky-600 dark:text-sky-400" />,
-      title: "Technical Leadership & Reviews",
-      description: "Leading frontend initiatives, performing structured code reviews, mentoring developers, and aligning technical execution with stakeholder goals.",
+      icon: <FiCode className="w-6 h-6 text-sky-600 dark:text-sky-400" />,
+      title: "UI Systems & Accessibility",
+      description:
+        "Creating responsive design systems using Tailwind CSS, Material UI, and Ant Design with a strong focus on usability, accessibility, responsiveness, and WCAG standards.",
     },
   ];
 
@@ -35,7 +52,7 @@ const About = () => {
         subtitle="5+ years of dedicated frontend development experience delivering robust, accessible, and high-performance digital products."
       />
 
-      <div className="grid grid-cols-1 lg:grid-cols-12 gap-10 items-center">
+      <div className="grid grid-cols-1 lg:grid-cols-12 gap-10">
         {/* Left Column: Narrative Summary */}
         <div className="lg:col-span-6 flex flex-col gap-5 text-base sm:text-lg text-slate-600 dark:text-slate-300 leading-relaxed">
           <p>
@@ -55,18 +72,18 @@ const About = () => {
               <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400">Years Experience</p>
             </div>
             <div>
-              <p className="text-2xl sm:text-3xl font-bold font-titleFont text-sky-600 dark:text-sky-400">4</p>
+              <p className="text-2xl sm:text-3xl font-bold font-titleFont text-sky-600 dark:text-sky-400">{ExperienceData.length}</p>
               <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400">Engineering Roles</p>
             </div>
             <div>
-              <p className="text-2xl sm:text-3xl font-bold font-titleFont text-sky-600 dark:text-sky-400">10+</p>
+              <p className="text-2xl sm:text-3xl font-bold font-titleFont text-sky-600 dark:text-sky-400">{ProjectsData.length}+</p>
               <p className="text-xs sm:text-sm text-slate-500 dark:text-slate-400">Production Projects</p>
             </div>
           </div>
         </div>
 
         {/* Right Column: Key Pillars */}
-        <div className="lg:col-span-6 grid grid-cols-1 sm:grid-cols-2 gap-4">
+        <div className="lg:col-span-6 grid grid-cols-1 md:grid-cols-2 gap-4">
           {highlights.map((item, index) => (
             <div key={index} className="portfolioCard flex flex-col gap-3">
               <div className="w-12 h-12 rounded-xl bg-sky-50 dark:bg-sky-950/60 border border-sky-200 dark:border-sky-800/60 flex items-center justify-center">

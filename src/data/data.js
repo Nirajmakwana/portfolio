@@ -53,7 +53,7 @@ export const ExperienceData = [
   {
     id: "tecvisio",
     role: "Senior Full Stack Engineer / Senior React Developer",
-    company: "Tecvisio.AI / Tecvisio",
+    company: "Tecvisio.AI",
     period: "May 2025 – Present",
     location: "Remote",
     type: "Full-Time",
@@ -137,252 +137,563 @@ export const ExperienceData = [
 export const ProjectsData = [
   {
     id: "iaudix",
-    name: "iAudix — Maritime Compliance & Inspection Platform",
-    category: "fullstack",
-    companyAssociated: "Tecvisio.AI / Tecvisio",
+    title: "iAudix",
+    subtitle: "Maritime Compliance & Inspection Platform",
+    category: "Full Stack",
+    company: "Tecvisio.AI",
+    role: "Senior Full Stack Engineer / Senior React Developer",
+    period: "May 2025 – Present",
+    location: "Remote",
     featured: true,
-    tagline: "Enterprise maritime compliance platform for real-time navigational audits, vessel inspections, and fleet-wide analytics.",
-    TechName: ["React.js", "Next.js", "Node.js", "Tailwind CSS", "Redux Toolkit", "REST APIs"],
+
+    tagline:
+      "Enterprise maritime compliance platform for vessel inspections, navigational audits, and fleet-wide analytics.",
+
+    description:
+      "iAudix is a cloud-based maritime compliance platform that helps ship owners, operators, auditors, and marine management teams plan, conduct, monitor, and report vessel inspections. The platform replaces paper-based checklists and disconnected systems with a centralized digital inspection workflow.",
+
+    challenge:
+      "The platform needed to support inspections in environments with unreliable or no internet connectivity while handling complex role-based access, large inspection datasets, and strict availability requirements.",
+
+    solution:
+      "Built an offline-first inspection architecture with local data persistence and automatic synchronization. Implemented role-based workspaces, compliance templates, inspection workflows, audit trails, and fleet analytics dashboards.",
+
+    features: [
+      "Offline-first inspection workflows",
+      "Automatic data synchronization",
+      "Role-based workspaces",
+      "SIRE 2.0, PSC, ISM, ISPS & MLC compliance templates",
+      "Observation management and audit trails",
+      "Fleet analytics dashboards",
+      "Risk matrices and compliance scoring",
+      "Recurring defect detection",
+      "Custom inspection template builder",
+    ],
+
+    technologies: [
+      "React.js",
+      "Next.js",
+      "Node.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Redux Toolkit",
+      "REST APIs",
+    ],
+
     link: "https://iaudix.com/login",
-    worklike: "Maritime Inspection & Compliance Platform",
-    overview: "A cloud-based web and mobile platform enabling ship owners, operators, auditors, and marine management teams to plan, conduct, monitor, and report vessel audits — replacing paper checklists, spreadsheets, and disconnected systems with one intelligent inspection platform.",
-    challenge: "Building a fully offline-capable inspection system that syncs seamlessly when connectivity returns, while managing complex role-based access (Company Admin, Superintendent, Crew) across 150+ fleet operators with 2M+ inspection records and 99.9% uptime requirements.",
-    solution: "Engineered an offline-first architecture with local data persistence and auto-sync mechanisms, role-based route guards and workspace isolation, predefined compliance templates aligned to SIRE 2.0, PSC, ISM, ISPS, and MLC standards, and real-time fleet analytics dashboards with heatmaps, risk matrices, and compliance scoring.",
-    keyFeatures: [
-      "Offline-first inspections — complete audits at sea without internet, auto-sync when connected",
-      "Observation management with full audit trails, ownership, due dates, and photo evidence",
-      "Fleet analytics dashboards with heatmaps, risk matrices, and compliance scoring",
-      "Predefined templates aligned to SIRE 2.0, PSC, ISM, ISPS, and MLC standards",
-      "Role-based workspaces for Company Admin, Superintendent, and Crew",
-      "Custom template builder for fleet-specific inspection requirements",
-      "Real-time compliance tracking visible to all stakeholders simultaneously",
-      "Port performance analytics and recurring defect detection across fleet",
-    ],
   },
+
   {
-    id: "isailmarine",
-    name: "iSail Marine — Maritime Recruitment Platform",
-    category: "fullstack",
-    companyAssociated: "Tecvisio.AI / Tecvisio",
+    id: "isail-marine",
+    title: "iSail Marine",
+    subtitle: "Maritime Recruitment Platform",
+    category: "Full Stack",
+    company: "Tecvisio.AI",
+    role: "Senior Full Stack Engineer / Senior React Developer",
+    period: "May 2025 – Present",
+    location: "Remote",
     featured: true,
-    tagline: "Technology-driven maritime recruitment platform connecting global seafarers, cadets, and maritime companies with transparent hiring solutions.",
-    TechName: ["React.js", "Next.js", "Node.js", "Tailwind CSS", "Redux Toolkit", "REST APIs"],
-    link: "https://isailmarine.ai/",
-    worklike: "LinkedIn + Naukri",
-    WorklikeLink: "https://www.linkedin.com/",
-    overview: "A unified maritime recruitment ecosystem that brings together global maritime talent, companies, and industry professionals on one platform — enabling jobseekers to discover opportunities and recruiters to build world-class maritime teams with transparency, speed, and compliance.",
-    challenge: "Creating a dual-sided recruitment marketplace that serves both seafarers/cadets seeking positions and maritime companies hiring crew, while handling competency-based candidate screening, subscription-based pricing plans, and industry-specific compliance requirements.",
-    solution: "Built a responsive dual-portal architecture with dedicated Jobseeker and Recruiter workflows, integrated competency screening and training support modules, subscription-based pricing tiers, and a content-driven blog/newsletter system for community engagement and maritime industry updates.",
-    keyFeatures: [
-      "Dual-portal system — dedicated workflows for Jobseekers and Recruiters",
-      "Maritime job discovery with advanced filtering by rank, vessel type, and certification",
-      "Recruiter dashboard for candidate screening, shortlisting, and placement tracking",
-      "Subscription-based pricing plans for recruiters with tiered feature access",
-      "Competency-based candidate evaluation aligned to maritime industry standards",
-      "Cross-platform mobile apps (iOS & Android) for on-the-go job search and recruitment",
-      "Blog and newsletter system for maritime industry updates and career guidance",
-      "Transparent recruitment process with compliance tracking and audit trails",
+
+    tagline:
+      "Technology-driven maritime recruitment platform connecting global seafarers, cadets, and maritime companies.",
+
+    description:
+      "iSail Marine is a specialized maritime recruitment ecosystem connecting seafarers, cadets, recruiters, and maritime companies. The platform provides job discovery, candidate screening, recruiter workflows, subscriptions, competency evaluation, and compliance tracking.",
+
+    challenge:
+      "The platform required a dual-sided recruitment experience supporting both jobseekers and recruiters while handling maritime-specific qualifications, competency screening, subscriptions, and compliance workflows.",
+
+    solution:
+      "Developed dedicated Jobseeker and Recruiter workflows with advanced job discovery, candidate management, competency screening, subscription plans, and mobile experiences for iOS and Android.",
+
+    features: [
+      "Jobseeker and Recruiter portals",
+      "Maritime job discovery",
+      "Advanced job filtering",
+      "Candidate screening",
+      "Recruiter dashboard",
+      "Candidate shortlisting",
+      "Competency-based evaluation",
+      "Subscription-based recruiter plans",
+      "Compliance tracking",
+      "iOS and Android applications",
+      "Blog and newsletter system",
     ],
+
+    technologies: [
+      "React.js",
+      "Next.js",
+      "Node.js",
+      "TypeScript",
+      "Tailwind CSS",
+      "Redux Toolkit",
+      "REST APIs",
+    ],
+
+    link: "https://isailmarine.ai/",
   },
+
   {
     id: "slotxpert",
-    name: "Transshipment Network Platform (SlotXpert)",
-    category: "web",
-    companyAssociated: "Spectus Infotech",
+    title: "SlotXpert",
+    subtitle: "Transshipment Network Platform",
+    category: "Web",
+    company: "Spectus Infotech",
+    role: "Senior Front-End Developer / Team Lead",
+    period: "March 2022 – June 2024",
+    location: "India",
     featured: true,
-    tagline: "Enterprise container booking, real-time logistics tracking, and multi-currency global billing portal.",
-    TechName: ["React.js", "Material UI (MUI)", "Redux Toolkit", "Formik", "REST APIs"],
+
+    tagline:
+      "Enterprise container booking, logistics tracking, and multi-currency global billing platform.",
+
+    description:
+      "SlotXpert is a digital logistics platform connecting cargo buyers, vessel sellers, and port operators for container booking and transshipment management.",
+
+    challenge:
+      "The platform required complex role permissions across multiple user types while supporting dynamic pricing, real-time booking workflows, container tracking, and multi-currency transactions.",
+
+    solution:
+      "Architected scalable Redux state management with granular role-based route protection and real-time quote adjustment workflows for seamless container booking and logistics management.",
+
+    features: [
+      "Role-based access control",
+      "Container booking",
+      "Real-time container tracking",
+      "Buyer and seller negotiations",
+      "Dynamic pricing",
+      "Multi-currency transactions",
+      "Automated invoicing",
+      "Dispute management",
+      "Admin CMS",
+      "User audit logs",
+    ],
+
+    technologies: [
+      "React.js",
+      "TypeScript",
+      "Material UI",
+      "Redux Toolkit",
+      "Formik",
+      "REST APIs",
+    ],
+
     link: "https://www.slotxpert.com/",
-    worklike: "Freightos",
-    overview: "A comprehensive digital logistics portal connecting cargo buyers, vessel sellers, and port operators for transshipment container booking and tracking.",
-    challenge: "Managing intricate role permissions across multiple user types (buyers, sellers, super-admins) and coordinating real-time container rate negotiations across global currencies.",
-    solution: "Architected a scalable Redux state flow with granular role-based route guards and real-time quote adjustment modules, enabling seamless multi-currency transactions and live status tracking.",
-    keyFeatures: [
-      "Role-based permission architecture (Super Admin, Buyer, Seller, Operator)",
-      "Real-time container booking, tracking, and dispute management",
-      "Dynamic price negotiation system with buyer/seller counter-offers",
-      "Multi-currency payment processing and automated invoicing",
-      "Comprehensive Admin Content Management & user audit logs",
-    ],
   },
+
   {
-    id: "design-studio",
-    name: "AI Design Studio & PDF Generator",
-    category: "fullstack",
-    companyAssociated: "StratoSphere IT Services / Builder.ai",
+    id: "ai-design-studio",
+    title: "AI Design Studio",
+    subtitle: "AI-Powered Design & PDF Generator",
+    category: "Full Stack",
+    company: "StratoSphere IT Services / Builder.ai",
+    role: "Senior React Developer",
+    period: "September 2024 – Present",
+    location: "Remote / Hybrid",
     featured: true,
-    tagline: "Canva-inspired design studio featuring AI video-to-PDF transcription and template customization.",
-    TechName: ["React.js", "Next.js", "Material UI", "Redux Toolkit", "AI APIs"],
-    worklike: "Canva",
-    WorklikeLink: "https://www.canva.com/",
-    overview: "A browser-based graphic and document creation suite that converts multimedia content (such as YouTube videos) into structured, editable PDF presentations using AI prompts.",
-    challenge: "Handling complex canvas manipulation, template layering, and fast AI transcription rendering without browser memory degradation.",
-    solution: "Designed modular canvas state layers using Redux Toolkit, paired with asynchronous processing queues for AI generation and custom print-ready vector PDF exporters.",
-    keyFeatures: [
-      "YouTube video URL to formatted PDF presentation with AI summarization",
-      "Template-driven canvas editor with drag-and-drop element positioning",
-      "Contextual AI prompt assistant for slide copy and graphic refinement",
-      "Multi-page high-resolution vector PDF export engine",
-      "Admin template and typography library management",
+
+    tagline:
+      "Canva-inspired design studio featuring AI-powered content generation and PDF creation.",
+
+    description:
+      "AI Design Studio is a browser-based design and document creation platform that converts multimedia content into structured, editable presentations and high-resolution PDFs using AI-powered workflows.",
+
+    challenge:
+      "The application required complex canvas manipulation, layered templates, asynchronous AI processing, and high-resolution PDF generation without negatively impacting browser performance.",
+
+    solution:
+      "Designed modular canvas state management using Redux Toolkit and asynchronous AI processing workflows. Built reusable design components and custom print-ready PDF export functionality.",
+
+    features: [
+      "AI-powered content generation",
+      "YouTube video to PDF",
+      "Drag-and-drop canvas editor",
+      "Template-based designs",
+      "AI prompt assistant",
+      "Multi-page PDF export",
+      "High-resolution output",
+      "Template management",
+      "Typography library",
+    ],
+
+    technologies: [
+      "React.js",
+      "Next.js",
+      "TypeScript",
+      "Material UI",
+      "Redux Toolkit",
+      "AI APIs",
     ],
   },
+
   {
     id: "digital-wallet",
-    name: "Digital Wallet & Fintech System",
-    category: "mobile",
-    companyAssociated: "StratoSphere IT Services / Builder.ai",
+    title: "Digital Wallet",
+    subtitle: "Fintech & Digital Payment Platform",
+    category: "Mobile + Web",
+    company: "StratoSphere IT Services / Builder.ai",
+    role: "Senior React Developer",
+    period: "September 2024 – Present",
+    location: "Remote / Hybrid",
     featured: true,
-    tagline: "Secure cross-platform digital payment and investment wallet with QR code checkout and 2FA.",
-    TechName: ["React Native", "React.js", "Redux", "Formik", "MUI", "Biometrics"],
-    worklike: "Google Pay",
-    WorklikeLink: "https://pay.google.com/",
-    overview: "A unified cross-platform mobile wallet and web dashboard enabling peer-to-peer money transfers, QR payments, micro-investments, and bank reconciliation.",
-    challenge: "Ensuring zero-leakage transaction security, instantaneous QR code scanning, and biometric authentication across diverse mobile hardware.",
-    solution: "Implemented strict two-factor authentication (2FA), encrypted payload tokens, and lightweight React Native UI components with native camera bridges for frictionless QR scanning.",
-    keyFeatures: [
-      "QR code, mobile contact, and direct bank account payment routing",
-      "Biometric login (FaceID / Fingerprint) and 2FA SMS verification",
-      "Multi-asset micro-investment tracking with live yield charts",
-      "Real-time balance synchronization and statement export (PDF/CSV)",
-      "Automated fraud and transaction limit guardrails",
+
+    tagline:
+      "Secure cross-platform digital wallet supporting payments, QR checkout, investments, and biometric authentication.",
+
+    description:
+      "A cross-platform fintech solution enabling peer-to-peer transfers, QR payments, micro-investments, bank reconciliation, and secure account management through mobile and web applications.",
+
+    challenge:
+      "The application required secure transaction handling, biometric authentication, real-time balance synchronization, and reliable QR payment workflows across different mobile devices.",
+
+    solution:
+      "Implemented secure authentication flows, encrypted transaction payloads, biometric login, QR scanning, and reusable React Native components for consistent cross-platform experiences.",
+
+    features: [
+      "Peer-to-peer payments",
+      "QR code payments",
+      "Bank account transfers",
+      "Biometric authentication",
+      "2FA verification",
+      "Investment tracking",
+      "Real-time balance synchronization",
+      "PDF and CSV statements",
+      "Transaction limits",
+      "Fraud prevention workflows",
+    ],
+
+    technologies: [
+      "React Native",
+      "React.js",
+      "TypeScript",
+      "Redux",
+      "Formik",
+      "Material UI",
+      "Biometrics",
     ],
   },
+
   {
-    id: "hr-management",
-    name: "Enterprise HR & Talent Suite",
-    category: "web",
-    companyAssociated: "StratoSphere IT Services / Spectus Infotech",
+    id: "hr-talent-suite",
+    title: "Enterprise HR & Talent Suite",
+    subtitle: "HR Management & Recruitment Platform",
+    category: "Mobile + Web",
+    company: "StratoSphere IT Services / Spectus Infotech",
+    role: "Senior React Developer",
+    period: "2022 – Present",
+    location: "Remote / Hybrid",
     featured: true,
-    tagline: "All-in-one HR portal with video interviews, automated skill assessments, and leave tracking.",
-    TechName: ["React.js", "React Native", "Material UI", "Redux", "Formik", "WebRTC"],
-    link: "https://www.shrm.org/home",
-    worklike: "Workday",
-    overview: "An enterprise workforce platform combining automated candidate screening, interactive video assessments, candidate scoring, and employee lifecycle management.",
-    challenge: "Handling synchronous video interview scheduling, multi-format question banks (image/video/MCQ), and dynamic score reporting for enterprise hiring panels.",
-    solution: "Engineered a WebRTC-based video meeting room with real-time rubric scoring, automated PDF/Excel result generation, and centralized employee attendance modules.",
-    keyFeatures: [
-      "Multi-tiered hierarchy (Senior HR, Interviewer, Admin, Candidate)",
-      "Integrated browser video calling for remote technical interviews",
-      "Dynamic assessment engine supporting video, audio, image, and text questions",
-      "Instant candidate evaluation report generation in PDF and Excel formats",
-      "Comprehensive attendance, leave approvals, and employee profile tracking",
+
+    tagline:
+      "Enterprise HR platform with video interviews, assessments, candidate scoring, attendance, and employee management.",
+
+    description:
+      "An enterprise workforce platform combining recruitment, candidate assessments, video interviews, employee lifecycle management, attendance, and leave workflows.",
+
+    challenge:
+      "The platform needed to support synchronous video interviews, multi-format assessments, dynamic candidate scoring, and complex role-based enterprise workflows.",
+
+    solution:
+      "Built WebRTC-based video interview rooms, dynamic assessment workflows, real-time scoring interfaces, automated report generation, and centralized employee management modules.",
+
+    features: [
+      "Candidate management",
+      "WebRTC video interviews",
+      "Online assessments",
+      "Video, audio and image questions",
+      "Candidate scoring",
+      "PDF report generation",
+      "Excel report generation",
+      "Attendance management",
+      "Leave management",
+      "Role-based dashboards",
+    ],
+
+    technologies: [
+      "React.js",
+      "React Native",
+      "TypeScript",
+      "Material UI",
+      "Redux",
+      "Formik",
+      "WebRTC",
     ],
   },
+
   {
     id: "ecodrive",
-    name: "Innovative Driver Education (EcoDrive)",
-    category: "mobile",
-    companyAssociated: "Spectus Infotech",
+    title: "EcoDrive",
+    subtitle: "Innovative Driver Education Platform",
+    category: "Mobile + Web",
+    company: "Spectus Infotech",
+    role: "Senior Front-End Developer / Team Lead",
+    period: "March 2022 – June 2024",
+    location: "India / UAE",
     featured: true,
-    tagline: "Smart driving school platform with live GPS instructor tracking, online lessons, and licensing exams.",
-    TechName: ["React Native", "React.js", "MUI", "Redux", "Google Maps SDK"],
+
+    tagline:
+      "Smart driving school platform with live GPS tracking, lesson booking, online learning, and licensing workflows.",
+
+    description:
+      "EcoDrive is a driver education ecosystem supporting classroom learning, online lessons, practical driving bookings, instructor tracking, mock examinations, and licensing workflows.",
+
+    challenge:
+      "The platform required accurate real-time instructor tracking, proximity-based booking, multi-stage payments, and synchronized student learning and licensing workflows.",
+
+    solution:
+      "Integrated Google Maps and React Native location services for real-time instructor tracking and built modular booking, learning, examination, and checkout workflows.",
+
+    features: [
+      "Live instructor GPS tracking",
+      "Instructor booking",
+      "Location-based instructor discovery",
+      "Digital learning curriculum",
+      "Online mock tests",
+      "Student progress tracking",
+      "Lesson package payments",
+      "Government fee payments",
+      "Licensing workflows",
+      "Instructor competency logs",
+    ],
+
+    technologies: [
+      "React Native",
+      "React.js",
+      "JavaScript",
+      "TypeScript",
+      "MUI",
+      "Redux",
+      "Google Maps SDK",
+    ],
+
     link: "https://ecodrive.ae/en",
-    worklike: "Uber + Coursera",
-    WorklikeLink: "https://www.uber.com/",
-    overview: "A premier driver education ecosystem serving thousands of students across the UAE, facilitating classroom e-learning, practical lesson booking, and live vehicle tracking.",
-    challenge: "Synchronizing student instructor booking with precise real-time vehicle GPS locations and managing multi-stage licensing fee payments.",
-    solution: "Integrated Google Maps geolocation services with React Native background location tracking and built a step-by-step modular exam and checkout funnel.",
-    keyFeatures: [
-      "Live GPS tracking for instructor arrival and driving lesson routes",
-      "Instant instructor booking by proximity or preferred training center",
-      "Interactive digital curriculum with online mock testing and progress gating",
-      "Multi-tiered checkout for lesson packages, government exam fees, and licensing",
-      "Dedicated instructor portal for logging student competencies and drive logs",
-    ],
   },
+
   {
-    id: "digital-services",
-    name: "Digital Services Freelance Marketplace",
-    category: "web",
-    companyAssociated: "StratoSphere IT Services / Spectus Infotech",
+    id: "digital-services-marketplace",
+    title: "Digital Services Marketplace",
+    subtitle: "Freelance Marketplace",
+    category: "Mobile + Web",
+    company: "StratoSphere IT Services / Spectus Infotech",
+    role: "Senior React Developer",
+    period: "2022 – Present",
+    location: "Remote",
     featured: false,
-    tagline: "Decentralized freelance marketplace with crypto escrow payments and real-time client messaging.",
-    TechName: ["React.js", "Material UI", "Redux", "Formik", "Crypto Web3 / Stripe"],
-    worklike: "Upwork",
-    WorklikeLink: "https://www.upwork.com/",
-    overview: "A global marketplace enabling clients to discover, hire, and collaborate with skilled digital freelancers with multi-currency and cryptocurrency payment options.",
-    challenge: "Managing secure milestone-based escrow payments in crypto/fiat and supporting uninterrupted buyer-seller chat sessions.",
-    solution: "Built a responsive modular interface with reactive WebSocket messaging, customizable milestone invoice generation, and wallet connection states.",
-    keyFeatures: [
-      "Freelancer portfolio builder with custom gig packages and service tiers",
-      "Category search and filtered discovery by skill, rating, and hourly rate",
-      "Multi-currency & cryptocurrency checkout options with automated escrow release",
-      "Integrated real-time chat with file attachment support",
-      "Automated invoice generation and tax accounting summaries",
+
+    tagline:
+      "Global freelance marketplace with milestone payments, escrow, real-time messaging, and multi-currency support.",
+
+    description:
+      "A global freelance marketplace connecting clients with digital service providers through customizable service packages, skill-based discovery, secure payments, milestone workflows, and real-time communication.",
+
+    challenge:
+      "The platform needed secure milestone-based transactions, real-time buyer-seller communication, multi-currency payments, and flexible freelancer service packages.",
+
+    solution:
+      "Built modular marketplace interfaces, real-time messaging workflows, milestone invoice generation, payment states, and responsive freelancer portfolio and service management experiences.",
+
+    features: [
+      "Freelancer profiles",
+      "Portfolio builder",
+      "Service packages",
+      "Skill-based search",
+      "Advanced filtering",
+      "Milestone payments",
+      "Escrow workflows",
+      "Crypto payments",
+      "Real-time chat",
+      "File sharing",
+      "Invoice generation",
     ],
+
+    technologies: [
+      "React.js",
+      "Material UI",
+      "Redux",
+      "Formik",
+      "Web3",
+      "Stripe",
+      "WebSockets",
+    ],
+
+    link: "https://www.upwork.com/",
   },
+
   {
     id: "dental-hospital",
-    name: "Dental Hospital Management System",
-    category: "fullstack",
-    featured: false,
-    tagline: "Clinical healthcare portal for patient X-ray diagnostics, doctor scheduling, and electronic records.",
-    TechName: ["Next.js", "React.js", "Material UI", "Redux", "Formik"],
-    worklike: "Epic Systems",
-    overview: "A clinical management application built for dental clinics to manage electronic medical records (EMR), high-resolution DICOM/X-ray scans, and appointment calendars.",
-    challenge: "Ensuring high-resolution medical imaging viewer responsiveness while maintaining strict patient data isolation across clinics and staff tiers.",
-    solution: "Implemented Next.js server-side optimization for medical records and designed intuitive multi-view doctor/nurse/patient appointment dashboards.",
-    keyFeatures: [
-      "High-resolution digital dental X-ray and prescription viewer for doctors & nurses",
-      "Online patient portal for checking specialist availability and instant booking",
-      "Automated clinical treatment history logs and prescription tracking",
-      "Integrated billing, dental insurance claims, and payment receipts",
-      "Super-admin multi-clinic role and permission control",
+    title: "Dental Hospital Management System",
+    subtitle: "Healthcare & Clinical Management Platform",
+    category: "Full Stack",
+    company: "Independent Project",
+    role: "Full Stack Developer",
+    period: "Project Based",
+    location: "India",
+
+    tagline:
+      "Clinical healthcare platform for digital records, X-ray diagnostics, appointments, prescriptions, and billing.",
+
+    description:
+      "A dental hospital management system designed to manage electronic medical records, high-resolution X-ray images, appointments, prescriptions, treatment history, billing, insurance claims, and multi-clinic administration.",
+
+    challenge:
+      "The application required responsive medical imaging workflows while maintaining secure role-based access to sensitive patient information.",
+
+    solution:
+      "Implemented optimized Next.js interfaces for medical records and designed role-specific dashboards for doctors, nurses, patients, and administrators.",
+
+    features: [
+      "Digital dental X-ray viewer",
+      "Electronic medical records",
+      "Doctor appointment scheduling",
+      "Patient portal",
+      "Prescription management",
+      "Treatment history",
+      "Billing management",
+      "Insurance claims",
+      "Multi-clinic administration",
     ],
+
+    technologies: [
+      "Next.js",
+      "React.js",
+      "Material UI",
+      "Redux",
+      "Formik",
+      "REST APIs",
+    ],
+
+    link: null,
   },
+
   {
     id: "seek-direction",
-    name: "Spiritual Guidance & Community Platform",
-    category: "web",
-    featured: false,
-    tagline: "Community portal featuring donation processing, live event broadcasting, and attendee scheduling.",
-    TechName: ["Next.js", "React.js", "Material UI", "Formik", "Stripe API"],
-    link: "https://seekdirection.app/#/home",
-    overview: "An engaging community platform providing spiritual mentorship, charitable donation processing, and virtual event management for global participants.",
-    challenge: "Creating an accessible, multilingual user interface with frictionless one-click donation pathways and automated event reminders.",
-    solution: "Utilized Next.js for high SEO indexability, integrated secure Stripe donation funnels, and automated event broadcast email triggers.",
-    keyFeatures: [
-      "Secure recurring and one-off donation processing",
-      "Event calendar with registration and automated email invitations",
-      "Admin CMS for publishing community articles and video guidance",
-      "Mobile-first responsive interface tailored for all age demographics",
+    title: "Seek Direction",
+    subtitle: "Spiritual Guidance & Community Platform",
+    category: "Web",
+    company: "Independent Project",
+    role: "Full Stack Developer",
+    period: "Project Based",
+    location: "Remote",
+
+    tagline:
+      "Community platform for mentorship, donations, live events, and digital content.",
+
+    description:
+      "A community-focused platform providing spiritual mentorship, charitable donation processing, event management, digital content, and virtual community experiences for global participants.",
+
+    challenge:
+      "The platform required an accessible, responsive, SEO-friendly experience with secure donations, event registration, automated communication, and content publishing.",
+
+    solution:
+      "Built the platform using Next.js with SEO-focused rendering, integrated Stripe donation workflows, event registration, automated email triggers, and content management functionality.",
+
+    features: [
+      "Recurring donations",
+      "One-time donations",
+      "Event calendar",
+      "Event registration",
+      "Automated email invitations",
+      "Community CMS",
+      "Articles and video content",
+      "Responsive mobile-first design",
     ],
+
+    technologies: [
+      "Next.js",
+      "React.js",
+      "Material UI",
+      "Formik",
+      "Stripe API",
+    ],
+
+    link: "https://seekdirection.app/#/home",
   },
+
   {
     id: "doctor-consultation",
-    name: "Telemedicine & Doctor Consultation Platform",
-    category: "web",
-    featured: false,
-    tagline: "Telehealth consultation platform with Zoom video integration, e-prescriptions, and pharmacy inventory.",
-    TechName: ["Next.js", "React.js", "Ant Design", "Redux", "Zoom Web SDK"],
-    worklike: "Teladoc",
-    overview: "A multi-city telemedicine platform connecting patients with licensed physicians via encrypted video calls, e-prescriptions, and pharmacy dispatch.",
-    challenge: "Integrating Zoom Web SDK reliably across modern web browsers while maintaining synchronized patient record access during active video consultations.",
-    solution: "Architected a dual-pane consultation interface using Ant Design, allowing physicians to review patient medical history and issue e-prescriptions during live Zoom calls.",
-    keyFeatures: [
-      "Integrated browser-based HD video consultation via Zoom SDK",
-      "Live chat and real-time medical document sharing during consultations",
-      "Pharmacist portal for managing medication inventory and dispatch tracking",
-      "Multi-city doctor discovery with real-time schedule slot booking",
-      "Role-based dashboards for Hospital Admins, Doctors, Nurses, and Patients",
+    title: "Telemedicine Platform",
+    subtitle: "Doctor Consultation & Healthcare Platform",
+    category: "Web",
+    company: "Independent Project",
+    role: "Full Stack Developer",
+    period: "Project Based",
+    location: "Remote",
+
+    tagline:
+      "Telemedicine platform with video consultations, e-prescriptions, doctor scheduling, and pharmacy management.",
+
+    description:
+      "A multi-city telemedicine platform connecting patients with doctors through browser-based video consultations. The system supports appointment booking, medical records, live consultation, e-prescriptions, pharmacy inventory, and dispatch workflows.",
+
+    challenge:
+      "The platform required reliable browser-based video consultations while allowing doctors to access patient information and issue prescriptions during active sessions.",
+
+    solution:
+      "Built a dual-pane consultation interface integrating Zoom Web SDK with synchronized patient information, live chat, medical documents, and prescription workflows.",
+
+    features: [
+      "HD video consultations",
+      "Doctor discovery",
+      "Appointment scheduling",
+      "Live consultation chat",
+      "Medical document sharing",
+      "E-prescriptions",
+      "Pharmacy inventory",
+      "Medicine dispatch tracking",
+      "Role-based dashboards",
     ],
+
+    technologies: [
+      "Next.js",
+      "React.js",
+      "Ant Design",
+      "Redux",
+      "Zoom Web SDK",
+    ],
+
+    link: null,
   },
+
   {
-    id: "chat-landing",
-    name: "Modern Chat App Experience",
-    category: "web",
-    featured: false,
-    tagline: "High-performance marketing landing page with interactive UI previews and fast load times.",
-    TechName: ["Next.js", "React.js", "Material UI", "Tailwind CSS"],
-    worklike: "WhatsApp Web",
-    WorklikeLink: "https://www.whatsapp.com/",
-    overview: "A pixel-perfect responsive showcase page highlighting real-time messaging, end-to-end encryption features, and multi-device synchronization.",
-    challenge: "Delivering a visually stunning hero experience with zero layout shift and fast load times.",
-    solution: "Utilized Next.js image optimization, responsive SVGs, and lightweight Tailwind CSS utility classes.",
-    keyFeatures: [
-      "Fluid responsive design across mobile (320px+), tablet, and desktop",
-      "Next.js optimized asset pipeline with instant page transitions",
-      "Interactive feature previews demonstrating chat UI micro-interactions",
+    id: "chat-app",
+    title: "Modern Chat App Experience",
+    subtitle: "High-Performance Messaging Product Experience",
+    category: "Mobile + Web",
+    company: "Independent Project",
+    role: "Front-End Developer",
+    period: "Project Based",
+    location: "Remote",
+
+    tagline:
+      "High-performance marketing experience showcasing modern messaging and multi-device communication.",
+
+    description:
+      "A pixel-perfect responsive marketing experience designed to showcase messaging capabilities, real-time communication concepts, end-to-end encryption, and multi-device synchronization through interactive UI previews.",
+
+    challenge:
+      "The primary challenge was delivering a visually rich experience with minimal layout shift and fast loading performance across mobile, tablet, and desktop devices.",
+
+    solution:
+      "Used Next.js image optimization, responsive SVGs, lightweight Tailwind CSS utilities, and reusable React components to create a fast and responsive experience.",
+
+    features: [
+      "Fully responsive design",
+      "Interactive chat previews",
+      "Optimized image delivery",
+      "Responsive SVG graphics",
+      "Smooth page transitions",
+      "Performance-focused architecture",
     ],
+
+    technologies: [
+      "Next.js",
+      "React.js",
+      "Material UI",
+      "Tailwind CSS",
+      "JavaScript",
+      "TypeScript",
+    ],
+
+    link: null,
   },
 ];

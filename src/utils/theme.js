@@ -1,8 +1,8 @@
 import React, { createContext, useContext, useEffect, useState } from "react";
 
 const ThemeContext = createContext({
-  theme: "dark",
-  toggleTheme: () => {},
+  theme: "light",
+  toggleTheme: () => { },
 });
 
 export const ThemeProvider = ({ children }) => {
@@ -34,7 +34,7 @@ export const ThemeProvider = ({ children }) => {
       // ignore matchMedia errors
     }
 
-    return "dark";
+    return "light";
   });
 
   useEffect(() => {

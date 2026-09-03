@@ -3,6 +3,7 @@ import Title from "../layouts/Title";
 import { ExperienceData } from "../../data/data";
 import { FiBriefcase, FiCalendar, FiMapPin, FiCheckCircle, FiDownload, FiFolder } from "react-icons/fi";
 import MyResumePdf from "../../assets/Niraj-Makwana.pdf";
+import { dynamicResumeName } from "../../constants";
 
 const Experience = () => {
   return (
@@ -16,7 +17,7 @@ const Experience = () => {
         <div className="hidden sm:block pb-12">
           <a
             href={MyResumePdf}
-            download="Niraj-Makwana-Resume.pdf"
+            download={dynamicResumeName}
             className="secondaryBtn text-xs"
             aria-label="Download Full Resume"
           >

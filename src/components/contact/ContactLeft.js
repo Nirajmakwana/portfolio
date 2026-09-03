@@ -9,6 +9,7 @@ import {
   MyNumber,
   MyFormattedPhone,
   MyLocation,
+  dynamicResumeName,
 } from "../../constants";
 import MyResumePdf from "../../assets/Niraj-Makwana.pdf";
 
@@ -111,7 +112,7 @@ const ContactLeft = () => {
 
         <a
           href={MyResumePdf}
-          download="Niraj-Makwana-Resume.pdf"
+          download={dynamicResumeName}
           className="w-full secondaryBtn text-center"
           aria-label="Download Niraj Makwana CV"
         >

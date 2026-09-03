@@ -35,6 +35,7 @@ export const MyLinkedin = "https://www.linkedin.com/in/nirajmakwana12/";
 export const MyGithub = "https://github.com/Nirajmakwana";
 export const MyLocation = "India";
 export const YearsExperience = "5+";
+export const dynamicResumeName = `${MyName.replace(/\s+/g, "-")}-Resume(${new Date().getFullYear()}).pdf`;
 
 /**
  * Categorized technical skills prioritizing Core Frontend
