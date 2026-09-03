@@ -18,7 +18,6 @@ import {
   SiGit,
   SiGithub,
   SiGitlab,
-  SiPostgresql,
 } from "react-icons/si";
 import { TbBrandReactNative } from "react-icons/tb";
 import { FiCheckCircle } from "react-icons/fi";
