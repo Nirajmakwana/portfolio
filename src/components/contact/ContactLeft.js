@@ -111,7 +111,7 @@ const ContactLeft = () => {
         </div>
 
         <a
-          href={MyResumePdf}
+          href="/Niraj-Makwana.pdf"
           download={dynamicResumeName}
           className="w-full secondaryBtn text-center"
           aria-label="Download Niraj Makwana CV"

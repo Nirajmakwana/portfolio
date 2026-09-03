@@ -121,7 +121,7 @@ const Navbar = () => {
 
             {/* Resume CTA */}
             <a
-              href={MyResumePdf}
+              href="/Niraj-Makwana.pdf"
               download={dynamicResumeName}
               className="inline-flex items-center gap-2 px-4 py-2 rounded-xl bg-slate-100 dark:bg-slate-800 hover:bg-slate-200 dark:hover:bg-slate-700 text-slate-800 dark:text-slate-200 text-xs font-semibold border border-slate-200 dark:border-slate-700 transition-all focus-visible:ring-2 focus-visible:ring-sky-500"
               aria-label="Download Niraj Makwana's Resume"
@@ -227,7 +227,7 @@ const Navbar = () => {
             {/* Mobile Footer CTAs & Socials */}
             <div className="pt-6 border-t border-slate-200 dark:border-slate-800 flex flex-col gap-4">
               <a
-                href={MyResumePdf}
+                href="/Niraj-Makwana.pdf"
                 download={dynamicResumeName}
                 className="w-full primaryBtn text-center"
               >

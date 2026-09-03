@@ -16,7 +16,7 @@ const Experience = () => {
         />
         <div className="hidden sm:block pb-12">
           <a
-            href={MyResumePdf}
+            href="/Niraj-Makwana.pdf"
             download={dynamicResumeName}
             className="secondaryBtn text-xs"
             aria-label="Download Full Resume"

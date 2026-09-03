@@ -18,6 +18,8 @@ import {
   SiGit,
   SiGithub,
   SiGitlab,
+  SiStorybook,
+  SiDocker,
 } from "react-icons/si";
 import { TbBrandReactNative } from "react-icons/tb";
 import { FiCheckCircle } from "react-icons/fi";
@@ -34,7 +36,7 @@ export const MyLinkedin = "https://www.linkedin.com/in/nirajmakwana12/";
 export const MyGithub = "https://github.com/Nirajmakwana";
 export const MyLocation = "India";
 export const YearsExperience = "5+";
-export const dynamicResumeName = `${MyName.replace(/\s+/g, "-")}-Resume(2026).pdf`;
+export const dynamicResumeName = `${MyName.replace(/\s+/g, "-")}-Resume(${new Date().getFullYear()}).pdf`;
 
 /**
  * Categorized technical skills prioritizing Core Frontend
@@ -105,13 +107,21 @@ export const HighlightSkills = [
   { name: "TypeScript", Icon: SiTypescript },
   { name: "Next.js", Icon: SiNextdotjs },
   { name: "JavaScript", Icon: SiJavascript },
+
   { name: "Node.js", Icon: SiNodedotjs },
   { name: "Express.js", Icon: SiExpress },
+
   { name: "Tailwind CSS", Icon: SiTailwindcss },
   { name: "Redux Toolkit", Icon: SiRedux },
   { name: "React Query", Icon: SiReactquery },
   { name: "Material UI", Icon: SiMui },
+
+  { name: "Firebase", Icon: SiFirebase },
   { name: "Jest", Icon: SiJest },
+  { name: "Storybook", Icon: SiStorybook },
+
+  { name: "Git", Icon: SiGit },
+  { name: "Docker", Icon: SiDocker },
 ];
 
 /**
